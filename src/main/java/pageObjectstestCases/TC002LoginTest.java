@@ -23,5 +23,6 @@ public class TC002LoginTest extends BaseClass {
 		boolean targetpage = myacc.MyaccountPageExists();
 
 		Assert.assertTrue(targetpage);
+		myacc.logoutbtn();
 	}
 }

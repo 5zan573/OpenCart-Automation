@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-03-16T16:09:59 IST" name="Suite" finished-at="2025-03-16T16:10:05 IST" duration-ms="6355">
+  <suite started-at="2025-03-17T10:57:52 IST" name="Master Suite" finished-at="2025-03-17T10:57:55 IST" duration-ms="3449">
     <groups>
     </groups>
-    <test started-at="2025-03-16T16:09:59 IST" name="Test" finished-at="2025-03-16T16:10:05 IST" duration-ms="6355">
+    <test started-at="2025-03-17T10:57:52 IST" name="Test" finished-at="2025-03-17T10:57:55 IST" duration-ms="3449">
       <class name="pageObjectstestCases.TC002LoginTest">
-        <test-method is-config="true" signature="SetUp(java.lang.String,java.lang.String)[pri:0, instance:pageObjectstestCases.TC002LoginTest@52b1beb6]" started-at="2025-03-16T16:10:03 IST" name="SetUp" finished-at="2025-03-16T16:10:04 IST" duration-ms="1760" status="PASS">
+        <test-method is-config="true" signature="SetUp(java.lang.String,java.lang.String)[pri:0, instance:pageObjectstestCases.TC002LoginTest@59505b48]" started-at="2025-03-17T10:57:52 IST" name="SetUp" finished-at="2025-03-17T10:57:54 IST" duration-ms="2756" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -23,41 +23,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SetUp -->
-        <test-method signature="verifylogin()[pri:0, instance:pageObjectstestCases.TC002LoginTest@52b1beb6]" started-at="2025-03-16T16:10:04 IST" name="verifylogin" finished-at="2025-03-16T16:10:05 IST" duration-ms="556" status="PASS">
+        <test-method signature="verifylogin()[pri:0, instance:pageObjectstestCases.TC002LoginTest@59505b48]" started-at="2025-03-17T10:57:54 IST" name="verifylogin" finished-at="2025-03-17T10:57:55 IST" duration-ms="580" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifylogin -->
-        <test-method is-config="true" signature="TearDown()[pri:0, instance:pageObjectstestCases.TC002LoginTest@52b1beb6]" started-at="2025-03-16T16:10:05 IST" name="TearDown" finished-at="2025-03-16T16:10:05 IST" duration-ms="88" status="PASS">
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:pageObjectstestCases.TC002LoginTest@59505b48]" started-at="2025-03-17T10:57:55 IST" name="TearDown" finished-at="2025-03-17T10:57:55 IST" duration-ms="95" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TearDown -->
       </class> <!-- pageObjectstestCases.TC002LoginTest -->
-      <class name="pageObjectstestCases.TC001AccountRegistrationByProvidingAllFields">
-        <test-method is-config="true" signature="SetUp(java.lang.String,java.lang.String)[pri:0, instance:pageObjectstestCases.TC001AccountRegistrationByProvidingAllFields@6bd61f98]" started-at="2025-03-16T16:09:59 IST" name="SetUp" finished-at="2025-03-16T16:10:01 IST" duration-ms="2397" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Windows]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- SetUp -->
-        <test-method signature="navigateToRegistration()[pri:0, instance:pageObjectstestCases.TC001AccountRegistrationByProvidingAllFields@6bd61f98]" started-at="2025-03-16T16:10:01 IST" name="navigateToRegistration" finished-at="2025-03-16T16:10:03 IST" duration-ms="1440" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- navigateToRegistration -->
-        <test-method is-config="true" signature="TearDown()[pri:0, instance:pageObjectstestCases.TC001AccountRegistrationByProvidingAllFields@6bd61f98]" started-at="2025-03-16T16:10:03 IST" name="TearDown" finished-at="2025-03-16T16:10:03 IST" duration-ms="93" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TearDown -->
-      </class> <!-- pageObjectstestCases.TC001AccountRegistrationByProvidingAllFields -->
     </test> <!-- Test -->
-  </suite> <!-- Suite -->
+  </suite> <!-- Master Suite -->
 </testng-results>

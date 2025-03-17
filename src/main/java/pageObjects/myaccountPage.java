@@ -11,13 +11,21 @@ public class myaccountPage extends BasePage {
 	}
 
 	@FindBy(xpath = "//body//main//h2[1]")
-	WebElement Myaccount;
+	WebElement myaccount;
+
+	@FindBy(xpath = "//body//main//a[13]")
+	WebElement logoutbtn;
 
 	public boolean MyaccountPageExists() {
 		try {
-			return (Myaccount.isDisplayed());
+			return (myaccount.isDisplayed());
 		} catch (Exception e) {
 			return false;
 		}
 	}
+
+	public void logoutbtn() {
+		logoutbtn.click();
+	}
+
 }
