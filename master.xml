@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Master Suite">
+  <test thread-count="5" name="Test">
+	  
+	  <parameter name="os" value="Windows"></parameter>
+	  <parameter name="browser" value="chrome"></parameter>
+	  
+    <classes>
+      <class name="pageObjectstestCases.TC001AccountRegistrationByProvidingAllFields"></class>
+      <class name="pageObjectstestCases.TC002LoginTest"></class>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
