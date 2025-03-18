@@ -6,6 +6,7 @@ import org.testng.annotations.Test;
 import pageObjects.homePage;
 import pageObjects.registerPage;
 
+//This class automates TC001,2,3,6
 public class AccountRegistrationByProvidingAllFields extends BaseClass {
 
 	@Test
