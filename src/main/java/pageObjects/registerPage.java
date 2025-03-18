@@ -22,8 +22,11 @@ public class registerPage extends BasePage {
 	@FindBy(xpath = "//input[@id='input-password']")
 	WebElement pass;
 
+	@FindBy(xpath = "//body//main//input[2]")
+	WebElement newsletterbtn;
+
 	@FindBy(xpath = "//input[@name='agree']")
-	WebElement pp;
+	WebElement policybtn;
 
 	@FindBy(xpath = "//button[normalize-space()='Continue']")
 	WebElement continuebtn;
@@ -52,12 +55,16 @@ public class registerPage extends BasePage {
 	}
 
 	public void policy() {
-		pp.click();
+		policybtn.click();
 
 	}
 
 	public String getconfirmationmessage() {
 		return getmesage.getText();
+	}
+
+	public void clickonnewsletter() {
+		newsletterbtn.click();
 	}
 
 }

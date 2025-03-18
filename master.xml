@@ -7,8 +7,8 @@
 	  <parameter name="browser" value="chrome"></parameter>
 	  
     <classes>
-      <!--<class name="pageObjectstestCases.TC001AccountRegistrationByProvidingAllFields"></class>-->
-      <class name="pageObjectstestCases.TC002LoginTest"></class>
+      <class name="pageObjectstestCases.AccountRegistrationByProvidingAllFields"></class> 
+     <!-- <class name="pageObjectstestCases.TC002LoginTest"></class>-->
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
