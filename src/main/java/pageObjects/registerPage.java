@@ -34,6 +34,9 @@ public class registerPage extends BasePage {
 	@FindBy(xpath = "//h1[text() = 'Your Account Has Been Created!']")
 	WebElement getmesage;
 
+	@FindBy(xpath = "//body//main//div//div//div//h1")
+	WebElement registerAccountHeading;
+
 	public void fname(String firstname) {
 		fname.sendKeys(firstname);
 	}
@@ -65,6 +68,14 @@ public class registerPage extends BasePage {
 
 	public void clickonnewsletter() {
 		newsletterbtn.click();
+	}
+
+	public boolean RegisterAccountisDisplayed() {
+		try {
+			registerAccountHeading.getText();
+		} catch (Exception e) {
+		}
+		return false;
 	}
 
 }

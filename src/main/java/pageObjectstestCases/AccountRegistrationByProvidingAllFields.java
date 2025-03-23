@@ -4,6 +4,8 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import pageObjects.homePage;
+import pageObjects.loginPage;
+import pageObjects.myaccountPage;
 import pageObjects.registerPage;
 
 //This class automates TC001,2,3,6
@@ -32,8 +34,10 @@ public class AccountRegistrationByProvidingAllFields extends BaseClass {
 	}
 }
 
-@Test
-class NewletterOptionYes extends BaseClass {
+//TC005
+class NewsletterOptionYes extends BaseClass {
+
+	@Test
 	public void AccountRegisterwithNewsletter() throws InterruptedException {
 		homePage hp = new homePage(driver);
 		hp.myaccount();
@@ -53,7 +57,66 @@ class NewletterOptionYes extends BaseClass {
 		String confmsg = rp.getconfirmationmessage();
 
 		Assert.assertEquals(confmsg, "Your Account Has Been Created!");
-
 	}
 
+}
+
+//TC007
+class DifferentWaysToNavigateToRegisterAccount extends BaseClass {
+	@Test
+	public void DifferentWayToNavigateRegisterAccount() {
+		homePage hp = new homePage(driver);
+		hp.myaccount();
+		hp.Clickonlogin();
+
+		loginPage lp = new loginPage(driver);
+		lp.clickonNewCustomer();
+
+		registerPage rp = new registerPage(driver);
+		boolean targetpage = rp.RegisterAccountisDisplayed();
+		Assert.assertTrue(targetpage);
+
+		hp.myaccount();
+		hp.Clickonlogin();
+		lp.clickonRegister();
+		boolean targetpage1 = rp.RegisterAccountisDisplayed();
+		Assert.assertTrue(targetpage1);
+	}
+}
+
+//TC009
+class loginwithwithValidEmail extends BaseClass {
+	@Test
+	public void verifylogin() {
+		homePage hp = new homePage(driver);
+		hp.myaccount();
+		hp.Clickonlogin();
+
+		loginPage lp = new loginPage(driver);
+		lp.setemail(p.getProperty("email"));
+		lp.setpassword(p.getProperty("password"));
+
+		myaccountPage myacc = new myaccountPage(driver);
+		boolean targetpage = myacc.MyaccountPageExists();
+
+		Assert.assertTrue(targetpage);
+		myacc.logoutbtn();
+	}
+}
+
+@Test
+class loginwithInvalidEmail extends BaseClass {
+
+	public void inValidEmail() {
+		homePage hp = new homePage(driver);
+		hp.myaccount();
+		hp.Clickonlogin();
+
+		loginPage lp = new loginPage(driver);
+		lp.setemail(randomAlphaNum() + "@gmail.com");
+		lp.setpassword(p.getProperty("password"));
+		lp.clickonbtn();
+		boolean actual = lp.InvalidAlert();
+
+	}
 }

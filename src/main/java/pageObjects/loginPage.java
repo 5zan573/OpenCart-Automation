@@ -19,6 +19,15 @@ public class loginPage extends BasePage {
 	@FindBy(xpath = "//button[@type='submit']")
 	WebElement loginbtn;
 
+	@FindBy(linkText = "Continue")
+	WebElement newcustomer;
+
+	@FindBy(linkText = "Register")
+	WebElement clickonRegister;
+
+	@FindBy(id = "alert")
+	WebElement alert;
+
 	public void setemail(String email) {
 		emailtxt.sendKeys(email);
 	}
@@ -29,6 +38,22 @@ public class loginPage extends BasePage {
 
 	public void clickonbtn() {
 		loginbtn.click();
+	}
+
+	public void clickonNewCustomer() {
+		newcustomer.click();
+	}
+
+	public void clickonRegister() {
+		clickonRegister.click();
+	}
+
+	public boolean InvalidAlert() {
+		try {
+			alert.getText();
+		} catch (Exception e) {
+		}
+		return false;
 	}
 
 }

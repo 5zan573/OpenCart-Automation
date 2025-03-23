@@ -18,10 +18,10 @@ public class myaccountPage extends BasePage {
 
 	public boolean MyaccountPageExists() {
 		try {
-			return (myaccount.isDisplayed());
+			myaccount.isDisplayed();
 		} catch (Exception e) {
-			return false;
 		}
+		return false;
 	}
 
 	public void logoutbtn() {
