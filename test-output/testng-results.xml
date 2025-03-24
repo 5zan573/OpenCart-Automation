@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="5" passed="3" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-03-17T10:57:52 IST" name="Master Suite" finished-at="2025-03-17T10:57:55 IST" duration-ms="3449">
+  <suite started-at="2025-03-24T15:13:37 IST" name="Master Suite" finished-at="2025-03-24T15:13:50 IST" duration-ms="13103">
     <groups>
     </groups>
-    <test started-at="2025-03-17T10:57:52 IST" name="Test" finished-at="2025-03-17T10:57:55 IST" duration-ms="3449">
-      <class name="pageObjectstestCases.TC002LoginTest">
-        <test-method is-config="true" signature="SetUp(java.lang.String,java.lang.String)[pri:0, instance:pageObjectstestCases.TC002LoginTest@59505b48]" started-at="2025-03-17T10:57:52 IST" name="SetUp" finished-at="2025-03-17T10:57:54 IST" duration-ms="2756" status="PASS">
+    <test started-at="2025-03-24T15:13:37 IST" name="Test" finished-at="2025-03-24T15:13:50 IST" duration-ms="13103">
+      <class name="pageObjectstestCases.NewsletterOptionYes">
+        <test-method is-config="true" signature="SetUp(java.lang.String,java.lang.String)[pri:0, instance:pageObjectstestCases.NewsletterOptionYes@771a660]" started-at="2025-03-24T15:13:40 IST" name="SetUp" finished-at="2025-03-24T15:13:42 IST" duration-ms="1733" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -23,15 +23,203 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SetUp -->
-        <test-method signature="verifylogin()[pri:0, instance:pageObjectstestCases.TC002LoginTest@59505b48]" started-at="2025-03-17T10:57:54 IST" name="verifylogin" finished-at="2025-03-17T10:57:55 IST" duration-ms="580" status="PASS">
+        <test-method signature="AccountRegisterwithNewsletter()[pri:0, instance:pageObjectstestCases.NewsletterOptionYes@771a660]" started-at="2025-03-24T15:13:42 IST" name="AccountRegisterwithNewsletter" finished-at="2025-03-24T15:13:43 IST" duration-ms="1467" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifylogin -->
-        <test-method is-config="true" signature="TearDown()[pri:0, instance:pageObjectstestCases.TC002LoginTest@59505b48]" started-at="2025-03-17T10:57:55 IST" name="TearDown" finished-at="2025-03-17T10:57:55 IST" duration-ms="95" status="PASS">
+        </test-method> <!-- AccountRegisterwithNewsletter -->
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:pageObjectstestCases.NewsletterOptionYes@771a660]" started-at="2025-03-24T15:13:43 IST" name="TearDown" finished-at="2025-03-24T15:13:44 IST" duration-ms="89" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TearDown -->
-      </class> <!-- pageObjectstestCases.TC002LoginTest -->
+      </class> <!-- pageObjectstestCases.NewsletterOptionYes -->
+      <class name="pageObjectstestCases.AccountRegistrationByProvidingAllFields">
+        <test-method is-config="true" signature="SetUp(java.lang.String,java.lang.String)[pri:0, instance:pageObjectstestCases.AccountRegistrationByProvidingAllFields@72e5a8e]" started-at="2025-03-24T15:13:37 IST" name="SetUp" finished-at="2025-03-24T15:13:39 IST" duration-ms="1655" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Windows]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUp -->
+        <test-method signature="navigateToRegistration()[pri:0, instance:pageObjectstestCases.AccountRegistrationByProvidingAllFields@72e5a8e]" started-at="2025-03-24T15:13:39 IST" name="navigateToRegistration" finished-at="2025-03-24T15:13:40 IST" duration-ms="1434" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToRegistration -->
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:pageObjectstestCases.AccountRegistrationByProvidingAllFields@72e5a8e]" started-at="2025-03-24T15:13:40 IST" name="TearDown" finished-at="2025-03-24T15:13:40 IST" duration-ms="92" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+      </class> <!-- pageObjectstestCases.AccountRegistrationByProvidingAllFields -->
+      <class name="pageObjectstestCases.loginwithInvalidEmail">
+        <test-method is-config="true" signature="SetUp(java.lang.String,java.lang.String)[pri:0, instance:pageObjectstestCases.loginwithInvalidEmail@3527942a]" started-at="2025-03-24T15:13:49 IST" name="SetUp" finished-at="2025-03-24T15:13:50 IST" duration-ms="1404" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Windows]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUp -->
+        <test-method signature="inValidEmail()[pri:0, instance:pageObjectstestCases.loginwithInvalidEmail@3527942a]" started-at="2025-03-24T15:13:50 IST" name="inValidEmail" finished-at="2025-03-24T15:13:50 IST" duration-ms="1" status="FAIL">
+          <exception class="java.lang.Error">
+            <message>
+              <![CDATA[Unresolved compilation problem: 
+Type mismatch: cannot convert from void to boolean
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Error: Unresolved compilation problem: 
+Type mismatch: cannot convert from void to boolean
+
+at pageObjectstestCases.loginwithInvalidEmail.inValidEmail(AccountRegistrationByProvidingAllFields.java:119)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Error -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- inValidEmail -->
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:pageObjectstestCases.loginwithInvalidEmail@3527942a]" started-at="2025-03-24T15:13:50 IST" name="TearDown" finished-at="2025-03-24T15:13:50 IST" duration-ms="84" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+      </class> <!-- pageObjectstestCases.loginwithInvalidEmail -->
+      <class name="pageObjectstestCases.DifferentWaysToNavigateToRegisterAccount">
+        <test-method is-config="true" signature="SetUp(java.lang.String,java.lang.String)[pri:0, instance:pageObjectstestCases.DifferentWaysToNavigateToRegisterAccount@2d52216b]" started-at="2025-03-24T15:13:44 IST" name="SetUp" finished-at="2025-03-24T15:13:45 IST" duration-ms="1390" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Windows]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUp -->
+        <test-method signature="DifferentWayToNavigateRegisterAccount()[pri:0, instance:pageObjectstestCases.DifferentWaysToNavigateToRegisterAccount@2d52216b]" started-at="2025-03-24T15:13:45 IST" name="DifferentWayToNavigateRegisterAccount" finished-at="2025-03-24T15:13:47 IST" duration-ms="1625" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DifferentWayToNavigateRegisterAccount -->
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:pageObjectstestCases.DifferentWaysToNavigateToRegisterAccount@2d52216b]" started-at="2025-03-24T15:13:47 IST" name="TearDown" finished-at="2025-03-24T15:13:47 IST" duration-ms="103" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+      </class> <!-- pageObjectstestCases.DifferentWaysToNavigateToRegisterAccount -->
+      <class name="pageObjectstestCases.loginwithwithValidEmail">
+        <test-method is-config="true" signature="SetUp(java.lang.String,java.lang.String)[pri:0, instance:pageObjectstestCases.loginwithwithValidEmail@242b836]" started-at="2025-03-24T15:13:47 IST" name="SetUp" finished-at="2025-03-24T15:13:48 IST" duration-ms="1369" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Windows]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUp -->
+        <test-method signature="verifylogin()[pri:0, instance:pageObjectstestCases.loginwithwithValidEmail@242b836]" started-at="2025-03-24T15:13:48 IST" name="verifylogin" finished-at="2025-03-24T15:13:49 IST" duration-ms="557" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertTrue(Assert.java:45)
+at org.testng.Assert.assertTrue(Assert.java:55)
+at pageObjectstestCases.loginwithwithValidEmail.verifylogin(AccountRegistrationByProvidingAllFields.java:102)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifylogin -->
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:pageObjectstestCases.loginwithwithValidEmail@242b836]" started-at="2025-03-24T15:13:49 IST" name="TearDown" finished-at="2025-03-24T15:13:49 IST" duration-ms="76" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+      </class> <!-- pageObjectstestCases.loginwithwithValidEmail -->
     </test> <!-- Test -->
   </suite> <!-- Master Suite -->
 </testng-results>

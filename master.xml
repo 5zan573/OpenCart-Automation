@@ -8,7 +8,10 @@
 	  
     <classes>
       <class name="pageObjectstestCases.AccountRegistrationByProvidingAllFields"></class> 
-     <!-- <class name="pageObjectstestCases.TC002LoginTest"></class>-->
+    <class name="pageObjectstestCases.NewsletterOptionYes"></class> 
+    <class name="pageObjectstestCases.DifferentWaysToNavigateToRegisterAccount"></class> 
+     <class name="pageObjectstestCases.loginwithwithValidEmail"></class> 
+          <class name="pageObjectstestCases.loginwithInvalidEmail"></class> 
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

@@ -17,9 +17,9 @@ public class myaccountPage extends BasePage {
 	WebElement logoutbtn;
 
 	public boolean MyaccountPageExists() {
-		try {
-			myaccount.isDisplayed();
-		} catch (Exception e) {
+
+		if (myaccount.isDisplayed()) {
+			myaccount.getText();
 		}
 		return false;
 	}

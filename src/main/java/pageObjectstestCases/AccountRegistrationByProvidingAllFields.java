@@ -117,6 +117,7 @@ class loginwithInvalidEmail extends BaseClass {
 		lp.setpassword(p.getProperty("password"));
 		lp.clickonbtn();
 		boolean actual = lp.InvalidAlert();
+		Assert.assertTrue(actual, "No match for E-Mail Address and/or Password");
 
 	}
 }

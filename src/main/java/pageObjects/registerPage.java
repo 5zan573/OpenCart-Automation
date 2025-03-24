@@ -71,11 +71,11 @@ public class registerPage extends BasePage {
 	}
 
 	public boolean RegisterAccountisDisplayed() {
-		try {
+
+		if (registerAccountHeading.isDisplayed()) {
 			registerAccountHeading.getText();
-		} catch (Exception e) {
 		}
-		return false;
+		return true;
 	}
 
 }
