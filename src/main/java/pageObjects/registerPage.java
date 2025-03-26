@@ -70,12 +70,8 @@ public class registerPage extends BasePage {
 		newsletterbtn.click();
 	}
 
-	public boolean RegisterAccountisDisplayed() {
-
-		if (registerAccountHeading.isDisplayed()) {
-			registerAccountHeading.getText();
-		}
-		return true;
+	public String RegisterAccountisDisplayed() {
+		return registerAccountHeading.getText();
 	}
 
 }

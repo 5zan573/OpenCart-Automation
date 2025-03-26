@@ -5,13 +5,6 @@
     <parameter name="os" value="Windows"/>
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="pageObjectstestCases.loginwithwithValidEmail">
-        <methods>
-          <include name="TearDown"/>
-          <include name="SetUp"/>
-          <include name="verifylogin"/>
-        </methods>
-      </class> <!-- pageObjectstestCases.loginwithwithValidEmail -->
       <class name="pageObjectstestCases.loginwithInvalidEmail">
         <methods>
           <include name="TearDown"/>

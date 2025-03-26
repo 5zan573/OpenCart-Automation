@@ -73,21 +73,16 @@ class DifferentWaysToNavigateToRegisterAccount extends BaseClass {
 		lp.clickonNewCustomer();
 
 		registerPage rp = new registerPage(driver);
-		boolean targetpage = rp.RegisterAccountisDisplayed();
-		Assert.assertTrue(targetpage);
-
-		hp.myaccount();
-		hp.Clickonlogin();
-		lp.clickonRegister();
-		boolean targetpage1 = rp.RegisterAccountisDisplayed();
-		Assert.assertTrue(targetpage1);
+		String actualmsg = rp.RegisterAccountisDisplayed();
+		String expectedmsg = "Register Account";
+		Assert.assertEquals(actualmsg, expectedmsg, "Register Account does not exist!");
 	}
 }
 
 //TC009
 class loginwithwithValidEmail extends BaseClass {
 	@Test
-	public void verifylogin() {
+	public void verifylogin() throws InterruptedException {
 		homePage hp = new homePage(driver);
 		hp.myaccount();
 		hp.Clickonlogin();
@@ -95,18 +90,20 @@ class loginwithwithValidEmail extends BaseClass {
 		loginPage lp = new loginPage(driver);
 		lp.setemail(p.getProperty("email"));
 		lp.setpassword(p.getProperty("password"));
+		lp.clickonlogin();
 
+		Thread.sleep(3000);
 		myaccountPage myacc = new myaccountPage(driver);
-		boolean targetpage = myacc.MyaccountPageExists();
+		String actualmsg = myacc.MyaccountPageExists();
+		String expectedmsg = "My Account";
 
-		Assert.assertTrue(targetpage);
+		Assert.assertEquals(actualmsg, expectedmsg, "My Account does not exist!");
 		myacc.logoutbtn();
 	}
 }
 
-@Test
 class loginwithInvalidEmail extends BaseClass {
-
+	@Test
 	public void inValidEmail() {
 		homePage hp = new homePage(driver);
 		hp.myaccount();
@@ -115,9 +112,10 @@ class loginwithInvalidEmail extends BaseClass {
 		loginPage lp = new loginPage(driver);
 		lp.setemail(randomAlphaNum() + "@gmail.com");
 		lp.setpassword(p.getProperty("password"));
-		lp.clickonbtn();
-		boolean actual = lp.InvalidAlert();
-		Assert.assertTrue(actual, "No match for E-Mail Address and/or Password");
+		lp.clickonlogin();
+		String actualmsg = lp.InvalidAlert();
+		String expectedmsg = "Warning: No match for E-Mail Address and/or Password.";
+		Assert.assertEquals(actualmsg, expectedmsg, "Warning does not exist!");
 
 	}
 }

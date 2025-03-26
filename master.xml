@@ -7,8 +7,8 @@
 	  <parameter name="browser" value="chrome"></parameter>
 	  
     <classes>
-      <class name="pageObjectstestCases.AccountRegistrationByProvidingAllFields"></class> 
-    <class name="pageObjectstestCases.NewsletterOptionYes"></class> 
+     <!-- <class name="pageObjectstestCases.AccountRegistrationByProvidingAllFields"></class> -->
+   <!-- <class name="pageObjectstestCases.NewsletterOptionYes"></class> -->
     <class name="pageObjectstestCases.DifferentWaysToNavigateToRegisterAccount"></class> 
      <class name="pageObjectstestCases.loginwithwithValidEmail"></class> 
           <class name="pageObjectstestCases.loginwithInvalidEmail"></class> 

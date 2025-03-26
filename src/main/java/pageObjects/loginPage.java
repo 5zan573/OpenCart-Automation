@@ -5,6 +5,7 @@ import java.time.Duration;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class loginPage extends BasePage {
@@ -28,8 +29,8 @@ public class loginPage extends BasePage {
 	@FindBy(linkText = "Register")
 	WebElement clickonRegister;
 
-	@FindBy(id = "alert")
-	WebElement alert;
+	@FindBy(xpath = "//body//div//dirv")
+	WebElement warning;
 
 	public void setemail(String email) {
 		emailtxt.sendKeys(email);
@@ -39,7 +40,7 @@ public class loginPage extends BasePage {
 		passwordtxt.sendKeys(password);
 	}
 
-	public void clickonbtn() {
+	public void clickonlogin() {
 		loginbtn.click();
 	}
 
@@ -51,11 +52,10 @@ public class loginPage extends BasePage {
 		clickonRegister.click();
 	}
 
-	public boolean InvalidAlert() {
+	public String InvalidAlert() {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-		if (alert.isDisplayed()) {
-			alert.getText();
-		}
-		return false;
+		wait.until(ExpectedConditions.visibilityOf(warning));
+
+		return warning.getText();
 	}
 }
