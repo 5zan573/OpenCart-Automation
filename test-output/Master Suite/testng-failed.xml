@@ -5,6 +5,13 @@
     <parameter name="os" value="Windows"/>
     <parameter name="browser" value="chrome"/>
     <classes>
+      <class name="pageObjectstestCases.loginwithwithValidEmail">
+        <methods>
+          <include name="TearDown"/>
+          <include name="SetUp"/>
+          <include name="verifylogin"/>
+        </methods>
+      </class> <!-- pageObjectstestCases.loginwithwithValidEmail -->
       <class name="pageObjectstestCases.loginwithInvalidEmail">
         <methods>
           <include name="TearDown"/>
@@ -12,6 +19,13 @@
           <include name="inValidEmail"/>
         </methods>
       </class> <!-- pageObjectstestCases.loginwithInvalidEmail -->
+      <class name="pageObjectstestCases.DifferentWaysToNavigateToRegisterAccount">
+        <methods>
+          <include name="TearDown"/>
+          <include name="SetUp"/>
+          <include name="DifferentWayToNavigateRegisterAccount"/>
+        </methods>
+      </class> <!-- pageObjectstestCases.DifferentWaysToNavigateToRegisterAccount -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Master Suite] -->

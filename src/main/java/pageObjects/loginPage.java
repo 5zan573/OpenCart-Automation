@@ -1,12 +1,10 @@
 package pageObjects;
 
-import java.time.Duration;
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
+import org.openqa.selenium.support.ui.FluentWait;
 
 public class loginPage extends BasePage {
 
@@ -53,7 +51,7 @@ public class loginPage extends BasePage {
 	}
 
 	public String InvalidAlert() {
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		FluentWait wait = new FluentWait(driver);
 		wait.until(ExpectedConditions.visibilityOf(warning));
 
 		return warning.getText();
