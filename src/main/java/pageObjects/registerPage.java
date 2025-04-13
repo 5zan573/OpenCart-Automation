@@ -37,6 +37,30 @@ public class registerPage extends BasePage {
 	@FindBy(xpath = "//body//main//div//div//div//h1")
 	WebElement registerAccountHeading;
 
+	@FindBy(id = "error-firstname")
+	WebElement fnameerrormessage;
+
+	@FindBy(id = "error-lastname")
+	WebElement lnameerrormessage;
+
+	@FindBy(id = "error-email")
+	WebElement emailerrormessage;
+
+	@FindBy(id = "error-password")
+	WebElement passerrormessage;
+
+	@FindBy(css = "label[for='input-firstname']")
+	WebElement fnameholder;
+
+	@FindBy(css = "label[for='input-lastname']")
+	WebElement lnameholder;
+
+	@FindBy(css = "label[for='input-email']")
+	WebElement emailholder;
+
+	@FindBy(css = "label[for='input-password']")
+	WebElement passholder;
+
 	public void fname(String firstname) {
 		fname.sendKeys(firstname);
 	}
@@ -59,7 +83,6 @@ public class registerPage extends BasePage {
 
 	public void policy() {
 		policybtn.click();
-
 	}
 
 	public String getconfirmationmessage() {
@@ -72,6 +95,39 @@ public class registerPage extends BasePage {
 
 	public String RegisterAccountisDisplayed() {
 		return registerAccountHeading.getText();
+	}
+
+	public String FnameErrorMessage() {
+		return fnameerrormessage.getText();
+
+	}
+
+	public String LnameErrorMessage() {
+		return lnameerrormessage.getText();
+	}
+
+	public String EmailErrorMessage() {
+		return emailerrormessage.getText();
+	}
+
+	public String PasswordErrorMessage() {
+		return passerrormessage.getText();
+	}
+
+	public String FnamePlaceHolder() {
+		return fname.getAttribute("for");
+	}
+
+	public String lnamePlaceHolder() {
+		return lname.getAttribute("for");
+	}
+
+	public String EmailPlaceHolder() {
+		return emailholder.getAttribute("for");
+	}
+
+	public String PasswordPlaceHolder() {
+		return passholder.getAttribute("for");
 	}
 
 }

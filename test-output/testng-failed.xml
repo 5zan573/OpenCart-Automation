@@ -1,31 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Master Suite]" guice-stage="DEVELOPMENT">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
-    <parameter name="os" value="Windows"/>
+    <parameter name="os" value="windows"/>
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="pageObjectstestCases.loginwithwithValidEmail">
-        <methods>
-          <include name="TearDown"/>
-          <include name="SetUp"/>
-          <include name="verifylogin"/>
-        </methods>
-      </class> <!-- pageObjectstestCases.loginwithwithValidEmail -->
-      <class name="pageObjectstestCases.loginwithInvalidEmail">
-        <methods>
-          <include name="TearDown"/>
-          <include name="SetUp"/>
-          <include name="inValidEmail"/>
-        </methods>
-      </class> <!-- pageObjectstestCases.loginwithInvalidEmail -->
-      <class name="pageObjectstestCases.DifferentWaysToNavigateToRegisterAccount">
+      <class name="pageObjectstestCases.NavigationTest">
         <methods>
           <include name="TearDown"/>
           <include name="SetUp"/>
           <include name="DifferentWayToNavigateRegisterAccount"/>
         </methods>
-      </class> <!-- pageObjectstestCases.DifferentWaysToNavigateToRegisterAccount -->
+      </class> <!-- pageObjectstestCases.NavigationTest -->
+      <class name="pageObjectstestCases.RegistrationTest">
+        <methods>
+          <include name="TearDown"/>
+          <include name="SetUp"/>
+          <include name="RegistaringAccountWithValidData"/>
+          <include name="RegistaringAccountWithNewLetterEnabled"/>
+        </methods>
+      </class> <!-- pageObjectstestCases.RegistrationTest -->
+      <class name="pageObjectstestCases.LoginTest">
+        <methods>
+          <include name="verifylogin"/>
+          <include name="TearDown"/>
+          <include name="SetUp"/>
+          <include name="inValidEmail"/>
+        </methods>
+      </class> <!-- pageObjectstestCases.LoginTest -->
     </classes>
   </test> <!-- Test(failed) -->
-</suite> <!-- Failed suite [Master Suite] -->
+</suite> <!-- Failed suite [Suite] -->

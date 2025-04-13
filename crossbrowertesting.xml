@@ -8,7 +8,9 @@
 	  <parameter name="browser" value="chrome"></parameter>
 	  
     <classes>
-      <class name="pageObjectstestCases.AccountRegistrationByProvidingAllFields"/>
+	<class name="RegistrationTest"></class>
+    <class name="pageObjectstestCases.LoginTest"></class>
+    <class name="TegistrationTest"></class>
     </classes>
   </test> <!-- Test -->
   
@@ -18,17 +20,21 @@
 	  <parameter name="browser" value="edge"></parameter>
 	  
     <classes>
-      <class name="pageObjectstestCases.AccountRegistrationByProvidingAllFields"/>
+     <class name="RegistrationTest"></class>
+    <class name="pageObjectstestCases.LoginTest"></class>
+    <class name="TegistrationTest"></class>
     </classes>
   </test> <!-- Test -->
   
+  
   <test name="firefoxtest">
-	  
 	  <parameter name="os" value="Windows"></parameter>
 	  <parameter name="browser" value="firefox"></parameter>
 	  
     <classes>
-      <class name="pageObjectstestCases.AccountRegistrationByProvidingAllFields"/>
+     <class name="RegistrationTest"></class>
+    <class name="pageObjectstestCases.LoginTest"></class>
+    <class name="TegistrationTest"></class>
     </classes>
   </test> <!-- Test -->
   
