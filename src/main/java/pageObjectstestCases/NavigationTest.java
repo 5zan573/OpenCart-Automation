@@ -9,7 +9,7 @@ import pageObjects.registerPage;
 
 public class NavigationTest extends BaseClass {
 
-//TC007
+//TC_RF_007
 	@Test
 	public void DifferentWayToNavigateRegisterAccount() {
 		homePage hp = new homePage(driver);

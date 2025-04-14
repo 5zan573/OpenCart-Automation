@@ -3,6 +3,8 @@ package pageObjects;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.FluentWait;
 
 public class registerPage extends BasePage {
 
@@ -37,6 +39,9 @@ public class registerPage extends BasePage {
 	@FindBy(xpath = "//body//main//div//div//div//h1")
 	WebElement registerAccountHeading;
 
+	@FindBy(xpath = "//body//div//dirv")
+	WebElement warning;
+
 	@FindBy(id = "error-firstname")
 	WebElement fnameerrormessage;
 
@@ -60,6 +65,9 @@ public class registerPage extends BasePage {
 
 	@FindBy(css = "label[for='input-password']")
 	WebElement passholder;
+
+	@FindBy(css = "body > div:nth-child(1)")
+	WebElement emailexistalert;
 
 	public void fname(String firstname) {
 		fname.sendKeys(firstname);
@@ -97,6 +105,13 @@ public class registerPage extends BasePage {
 		return registerAccountHeading.getText();
 	}
 
+	public String InvalidAlert() {
+		FluentWait wait = new FluentWait(driver);
+		wait.until(ExpectedConditions.visibilityOf(warning));
+
+		return warning.getText();
+	}
+
 	public String FnameErrorMessage() {
 		return fnameerrormessage.getText();
 
@@ -128,6 +143,17 @@ public class registerPage extends BasePage {
 
 	public String PasswordPlaceHolder() {
 		return passholder.getAttribute("for");
+	}
+
+	public String GetInvalidEmailMsg() {
+		return txtemail.getAttribute("validationMessage");
+	}
+
+	public String EmailExistAlert() {
+		FluentWait wait = new FluentWait(driver);
+		wait.until(ExpectedConditions.visibilityOf(emailexistalert));
+		return emailexistalert.getText();
+
 	}
 
 }

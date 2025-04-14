@@ -7,7 +7,7 @@ import pageObjects.homePage;
 import pageObjects.registerPage;
 
 public class RegistrationTest extends BaseClass {
-//This class automates TC001,2,3,6
+//This class automates TC_RF_001,2,3,6
 	@Test
 	public void RegistaringAccountWithValidData() throws InterruptedException {
 		homePage hp = new homePage(driver);
@@ -18,19 +18,16 @@ public class RegistrationTest extends BaseClass {
 		rp.fname(randomString());
 		rp.lname(randomString());
 		rp.email(randomAlphaNum() + "@gmail.com");
-
-		String pass = randomAlphaNum();
-
-		rp.password(pass);
+		rp.password(randomAlphaNum());
 		rp.policy();
 		rp.continuebtn();
 
 		Assert.assertEquals(rp.getconfirmationmessage(), "Your Account Has Been Created!");
 	}
 
-//TC005
+//TC_RF_005
 	@Test
-	public void RegistaringAccountWithNewLetterEnabled() throws InterruptedException {
+	public void RegistaringAccountWithNewsLetterEnabled() throws InterruptedException {
 		homePage hp = new homePage(driver);
 		hp.myaccount();
 		hp.registeraccount();
@@ -39,10 +36,7 @@ public class RegistrationTest extends BaseClass {
 		rp.fname(randomString());
 		rp.lname(randomString());
 		rp.email(randomAlphaNum() + "@gmail.com");
-
-		String pass = randomAlphaNum();
-
-		rp.password(pass);
+		rp.password(randomAlphaNum());
 		rp.clickonnewsletter();
 		rp.policy();
 		rp.continuebtn();
@@ -50,7 +44,45 @@ public class RegistrationTest extends BaseClass {
 		Assert.assertEquals(rp.getconfirmationmessage(), "Your Account Has Been Created!");
 	}
 
-//TC012
+	// TC_RF_009
+	@Test
+	public void ValidatingByRegisteringExistingAccount() throws InterruptedException {
+		homePage hp = new homePage(driver);
+		hp.myaccount();
+		hp.Clickonlogin();
+
+		registerPage rp = new registerPage(driver);
+		rp.fname("Faizan");
+		rp.lname("Hussain");
+		rp.email(p.getProperty("email"));
+		rp.password(p.getProperty("password"));
+		rp.policy();
+		rp.continuebtn();
+
+		Assert.assertEquals(rp.EmailExistAlert(), "Warning: E-Mail Address is already registered!");
+
+	}
+
+	// TC_RF_010
+	@Test
+	public void ShouldNotRegisterWithInValidEmail() {
+		homePage hp = new homePage(driver);
+		hp.myaccount();
+		hp.Clickonlogin();
+
+		registerPage rp = new registerPage(driver);
+		rp.fname("faizan");
+		rp.lname("hussain");
+		rp.email(p.getProperty("faizanhussain573gmail.com"));
+		rp.password(p.getProperty("password"));
+		rp.policy();
+		rp.continuebtn();
+
+		Assert.assertEquals(rp.GetInvalidEmailMsg(),
+				"Please include an '@' in the email address. 'faizanhussain573gmail.com' is missing an '@'.");
+	}
+
+//TC_RF_012
 	@Test
 	public void ShouldNotRegisterWithKeyboardKeys() throws InterruptedException {
 		homePage hp = new homePage(driver);
@@ -74,7 +106,7 @@ public class RegistrationTest extends BaseClass {
 		rp.continuebtn();
 	}
 
-//TC013
+//TC_RF_013
 	@Test
 	public void PlaceHoldersVerification() throws InterruptedException {
 		homePage hp = new homePage(driver);

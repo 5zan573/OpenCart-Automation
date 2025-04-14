@@ -3,8 +3,6 @@ package pageObjects;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.FluentWait;
 
 public class loginPage extends BasePage {
 
@@ -27,9 +25,6 @@ public class loginPage extends BasePage {
 	@FindBy(linkText = "Register")
 	WebElement clickonRegister;
 
-	@FindBy(xpath = "//body//div//dirv")
-	WebElement warning;
-
 	public void setemail(String email) {
 		emailtxt.sendKeys(email);
 	}
@@ -50,10 +45,4 @@ public class loginPage extends BasePage {
 		clickonRegister.click();
 	}
 
-	public String InvalidAlert() {
-		FluentWait wait = new FluentWait(driver);
-		wait.until(ExpectedConditions.visibilityOf(warning));
-
-		return warning.getText();
-	}
 }
