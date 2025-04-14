@@ -49,7 +49,7 @@ public class RegistrationTest extends BaseClass {
 	public void ValidatingByRegisteringExistingAccount() throws InterruptedException {
 		homePage hp = new homePage(driver);
 		hp.myaccount();
-		hp.Clickonlogin();
+		hp.registeraccount();
 
 		registerPage rp = new registerPage(driver);
 		rp.fname("Faizan");
@@ -65,15 +65,15 @@ public class RegistrationTest extends BaseClass {
 
 	// TC_RF_010
 	@Test
-	public void ShouldNotRegisterWithInValidEmail() {
+	public void ShouldNotRegisterWithInValidEmail() throws InterruptedException {
 		homePage hp = new homePage(driver);
 		hp.myaccount();
-		hp.Clickonlogin();
+		hp.registeraccount();
 
 		registerPage rp = new registerPage(driver);
-		rp.fname("faizan");
-		rp.lname("hussain");
-		rp.email(p.getProperty("faizanhussain573gmail.com"));
+		rp.fname("Faizan");
+		rp.lname("Hussain");
+		rp.email("faizanhussain573gmail.com");
 		rp.password(p.getProperty("password"));
 		rp.policy();
 		rp.continuebtn();

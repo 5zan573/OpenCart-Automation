@@ -5,29 +5,14 @@
     <parameter name="os" value="windows"/>
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="pageObjectstestCases.NavigationTest">
-        <methods>
-          <include name="TearDown"/>
-          <include name="SetUp"/>
-          <include name="DifferentWayToNavigateRegisterAccount"/>
-        </methods>
-      </class> <!-- pageObjectstestCases.NavigationTest -->
       <class name="pageObjectstestCases.RegistrationTest">
         <methods>
           <include name="TearDown"/>
           <include name="SetUp"/>
-          <include name="RegistaringAccountWithValidData"/>
-          <include name="RegistaringAccountWithNewLetterEnabled"/>
+          <include name="ShouldNotRegisterWithKeyboardKeys"/>
+          <include name="PlaceHoldersVerification"/>
         </methods>
       </class> <!-- pageObjectstestCases.RegistrationTest -->
-      <class name="pageObjectstestCases.LoginTest">
-        <methods>
-          <include name="verifylogin"/>
-          <include name="TearDown"/>
-          <include name="SetUp"/>
-          <include name="inValidEmail"/>
-        </methods>
-      </class> <!-- pageObjectstestCases.LoginTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

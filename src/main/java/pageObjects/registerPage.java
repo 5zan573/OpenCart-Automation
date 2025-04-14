@@ -66,7 +66,7 @@ public class registerPage extends BasePage {
 	@FindBy(css = "label[for='input-password']")
 	WebElement passholder;
 
-	@FindBy(css = "body > div:nth-child(1)")
+	@FindBy(css = "body div dirv")
 	WebElement emailexistalert;
 
 	public void fname(String firstname) {

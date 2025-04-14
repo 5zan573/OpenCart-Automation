@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 5 failed tests</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">6 methods, 5 failed,   1 passed</span>
+                    <span class="method-stats">6 methods, 2 failed,   4 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -104,27 +104,12 @@
                     <div class="method-list-content failed suite-Suite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="pageObjectstestCases.NavigationTest" class="method navigator-link" hash-for-method="DifferentWayToNavigateRegisterAccount">DifferentWayToNavigateRegisterAccount</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="pageObjectstestCases.RegistrationTest" class="method navigator-link" hash-for-method="PlaceHoldersVerification">PlaceHoldersVerification</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="pageObjectstestCases.RegistrationTest" class="method navigator-link" hash-for-method="RegistaringAccountWithNewLetterEnabled">RegistaringAccountWithNewLetterEnabled</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="pageObjectstestCases.RegistrationTest" class="method navigator-link" hash-for-method="RegistaringAccountWithValidData">RegistaringAccountWithValidData</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="pageObjectstestCases.LoginTest" class="method navigator-link" hash-for-method="inValidEmail">inValidEmail</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="pageObjectstestCases.LoginTest" class="method navigator-link" hash-for-method="verifylogin">verifylogin</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="pageObjectstestCases.RegistrationTest" class="method navigator-link" hash-for-method="ShouldNotRegisterWithKeyboardKeys">ShouldNotRegisterWithKeyboardKeys</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Suite -->
@@ -138,7 +123,22 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="pageObjectstestCases.RegistrationTest" class="method navigator-link" hash-for-method="ShouldNotRegisterWithKeyboardKeys">ShouldNotRegisterWithKeyboardKeys</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="pageObjectstestCases.RegistrationTest" class="method navigator-link" hash-for-method="RegistaringAccountWithNewsLetterEnabled">RegistaringAccountWithNewsLetterEnabled</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="pageObjectstestCases.RegistrationTest" class="method navigator-link" hash-for-method="RegistaringAccountWithValidData">RegistaringAccountWithValidData</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="pageObjectstestCases.RegistrationTest" class="method navigator-link" hash-for-method="ShouldNotRegisterWithInValidEmail">ShouldNotRegisterWithInValidEmail</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="pageObjectstestCases.RegistrationTest" class="method navigator-link" hash-for-method="ValidatingByRegisteringExistingAccount">ValidatingByRegisteringExistingAccount</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -156,195 +156,30 @@
           <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">pageObjectstestCases.NavigationTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="DifferentWayToNavigateRegisterAccount">
-                  </a> <!-- DifferentWayToNavigateRegisterAccount -->
-                  <span class="method-name">DifferentWayToNavigateRegisterAccount</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchSessionException: invalid session id: session deleted as the browser has closed the connection
-from disconnected: unable to send message to renderer
-  (Session info: chrome=133.0.6943.99)
-Build info: version: &apos;4.29.0&apos;, revision: &apos;5fc1ec94cb&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [64e7a28dc39bca7bd343b05ba73fd920, findElement {using=xpath, value=//span[normalize-space()=&apos;My Account&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.99, chrome: {chromedriverVersion: 133.0.6943.141 (2a5d6da0d61..., userDataDir: C:\Users\user\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50459}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50459/devtoo..., se:cdpVersion: 133.0.6943.99, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 64e7a28dc39bca7bd343b05ba73fd920
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy14.click(Unknown Source)
-	at pageObjects.homePage.myaccount(homePage.java:23)
-	at pageObjectstestCases.NavigationTest.DifferentWayToNavigateRegisterAccount(NavigationTest.java:16)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 32 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
-          <div class="suite-Suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
               <span class="class-name">pageObjectstestCases.RegistrationTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="RegistaringAccountWithNewLetterEnabled">
-                  </a> <!-- RegistaringAccountWithNewLetterEnabled -->
-                  <span class="method-name">RegistaringAccountWithNewLetterEnabled</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchSessionException: invalid session id: session deleted as the browser has closed the connection
-from disconnected: unable to send message to renderer
-  (Session info: chrome=133.0.6943.99)
-Build info: version: &apos;4.29.0&apos;, revision: &apos;5fc1ec94cb&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [ca3754b14f957aef1c39aa799a65b932, findElement {using=xpath, value=//span[normalize-space()=&apos;My Account&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.99, chrome: {chromedriverVersion: 133.0.6943.141 (2a5d6da0d61..., userDataDir: C:\Users\user\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50479}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50479/devtoo..., se:cdpVersion: 133.0.6943.99, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: ca3754b14f957aef1c39aa799a65b932
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy14.click(Unknown Source)
-	at pageObjects.homePage.myaccount(homePage.java:23)
-	at pageObjectstestCases.RegistrationTest.RegistaringAccountWithNewLetterEnabled(RegistrationTest.java:37)
+                  <a name="PlaceHoldersVerification">
+                  </a> <!-- PlaceHoldersVerification -->
+                  <span class="method-name">PlaceHoldersVerification</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [input-firstname] but found [null]
+	at pageObjectstestCases.RegistrationTest.PlaceHoldersVerification(RegistrationTest.java:117)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 32 stack frames
+... Removed 33 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="RegistaringAccountWithValidData">
-                  </a> <!-- RegistaringAccountWithValidData -->
-                  <span class="method-name">RegistaringAccountWithValidData</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchSessionException: invalid session id
-Build info: version: &apos;4.29.0&apos;, revision: &apos;5fc1ec94cb&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [ca3754b14f957aef1c39aa799a65b932, findElement {using=xpath, value=//span[normalize-space()=&apos;My Account&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.99, chrome: {chromedriverVersion: 133.0.6943.141 (2a5d6da0d61..., userDataDir: C:\Users\user\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50479}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50479/devtoo..., se:cdpVersion: 133.0.6943.99, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: ca3754b14f957aef1c39aa799a65b932
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy14.click(Unknown Source)
-	at pageObjects.homePage.myaccount(homePage.java:23)
-	at pageObjectstestCases.RegistrationTest.RegistaringAccountWithValidData(RegistrationTest.java:14)
+                  <a name="ShouldNotRegisterWithKeyboardKeys">
+                  </a> <!-- ShouldNotRegisterWithKeyboardKeys -->
+                  <span class="method-name">ShouldNotRegisterWithKeyboardKeys</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [First Name must be between 1 and 32 characters!] but found []
+	at pageObjectstestCases.RegistrationTest.ShouldNotRegisterWithKeyboardKeys(RegistrationTest.java:94)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 32 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
-          <div class="suite-Suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">pageObjectstestCases.LoginTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="inValidEmail">
-                  </a> <!-- inValidEmail -->
-                  <span class="method-name">inValidEmail</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[normalize-space()=&apos;My Account&apos;]&quot;}
-  (Session info: chrome=133.0.6943.99)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.29.0&apos;, revision: &apos;5fc1ec94cb&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [03d636c68b6484efae14339b18c162c4, findElement {using=xpath, value=//span[normalize-space()=&apos;My Account&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.99, chrome: {chromedriverVersion: 133.0.6943.141 (2a5d6da0d61..., userDataDir: C:\Users\user\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50437}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50437/devtoo..., se:cdpVersion: 133.0.6943.99, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 03d636c68b6484efae14339b18c162c4
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy14.click(Unknown Source)
-	at pageObjects.homePage.myaccount(homePage.java:23)
-	at pageObjectstestCases.LoginTest.inValidEmail(LoginTest.java:37)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 32 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifylogin">
-                  </a> <!-- verifylogin -->
-                  <span class="method-name">verifylogin</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchSessionException: invalid session id: session deleted as the browser has closed the connection
-from disconnected: Unable to receive message from renderer
-  (Session info: chrome=133.0.6943.99)
-Build info: version: &apos;4.29.0&apos;, revision: &apos;5fc1ec94cb&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [03d636c68b6484efae14339b18c162c4, findElement {using=xpath, value=//span[normalize-space()=&apos;My Account&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.99, chrome: {chromedriverVersion: 133.0.6943.141 (2a5d6da0d61..., userDataDir: C:\Users\user\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50437}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50437/devtoo..., se:cdpVersion: 133.0.6943.99, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 03d636c68b6484efae14339b18c162c4
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy14.click(Unknown Source)
-	at pageObjects.homePage.myaccount(homePage.java:23)
-	at pageObjectstestCases.LoginTest.verifylogin(LoginTest.java:16)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 32 stack frames
+... Removed 33 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -358,9 +193,30 @@ Session ID: 03d636c68b6484efae14339b18c162c4
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="ShouldNotRegisterWithKeyboardKeys">
-                  </a> <!-- ShouldNotRegisterWithKeyboardKeys -->
-                  <span class="method-name">ShouldNotRegisterWithKeyboardKeys</span>
+                  <a name="RegistaringAccountWithNewsLetterEnabled">
+                  </a> <!-- RegistaringAccountWithNewsLetterEnabled -->
+                  <span class="method-name">RegistaringAccountWithNewsLetterEnabled</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="RegistaringAccountWithValidData">
+                  </a> <!-- RegistaringAccountWithValidData -->
+                  <span class="method-name">RegistaringAccountWithValidData</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ShouldNotRegisterWithInValidEmail">
+                  </a> <!-- ShouldNotRegisterWithInValidEmail -->
+                  <span class="method-name">ShouldNotRegisterWithInValidEmail</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ValidatingByRegisteringExistingAccount">
+                  </a> <!-- ValidatingByRegisteringExistingAccount -->
+                  <span class="method-name">ValidatingByRegisteringExistingAccount</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -379,8 +235,6 @@ Session ID: 03d636c68b6484efae14339b18c162c4
     &lt;parameter name=&quot;os&quot; value=&quot;windows&quot;/&gt;
     &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;pageObjectstestCases.LoginTest&quot;/&gt;
-      &lt;class name=&quot;pageObjectstestCases.NavigationTest&quot;/&gt;
       &lt;class name=&quot;pageObjectstestCases.RegistrationTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
@@ -395,7 +249,7 @@ Session ID: 03d636c68b6484efae14339b18c162c4
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test (3 classes)</span>
+                <span class="test-name">Test (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -423,34 +277,34 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(6);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'inValidEmail')
-data.setCell(0, 2, 'pageObjectstestCases.LoginTest')
-data.setCell(0, 3, 10048);
+data.setCell(0, 1, 'RegistaringAccountWithNewsLetterEnabled')
+data.setCell(0, 2, 'pageObjectstestCases.RegistrationTest')
+data.setCell(0, 3, 2148);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'verifylogin')
-data.setCell(1, 2, 'pageObjectstestCases.LoginTest')
-data.setCell(1, 3, 6267);
+data.setCell(1, 1, 'RegistaringAccountWithValidData')
+data.setCell(1, 2, 'pageObjectstestCases.RegistrationTest')
+data.setCell(1, 3, 1503);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'DifferentWayToNavigateRegisterAccount')
-data.setCell(2, 2, 'pageObjectstestCases.NavigationTest')
-data.setCell(2, 3, 2285);
+data.setCell(2, 1, 'ValidatingByRegisteringExistingAccount')
+data.setCell(2, 2, 'pageObjectstestCases.RegistrationTest')
+data.setCell(2, 3, 1049);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'RegistaringAccountWithNewLetterEnabled')
+data.setCell(3, 1, 'ShouldNotRegisterWithInValidEmail')
 data.setCell(3, 2, 'pageObjectstestCases.RegistrationTest')
-data.setCell(3, 3, 1941);
+data.setCell(3, 3, 727);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'RegistaringAccountWithValidData')
+data.setCell(4, 1, 'ShouldNotRegisterWithKeyboardKeys')
 data.setCell(4, 2, 'pageObjectstestCases.RegistrationTest')
-data.setCell(4, 3, 24);
+data.setCell(4, 3, 554);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'ShouldNotRegisterWithKeyboardKeys')
+data.setCell(5, 1, 'PlaceHoldersVerification')
 data.setCell(5, 2, 'pageObjectstestCases.RegistrationTest')
-data.setCell(5, 3, 0);
+data.setCell(5, 3, 483);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 20 seconds</span>
+              <span class="suite-total-time">Total running time: 6 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -476,71 +330,83 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">pageObjectstestCases.LoginTest</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
+              <div class="chronological-class-name">pageObjectstestCases.RegistrationTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
                 <span class="method-name">SetUp(windows, chrome)</span>
                 <span class="method-start">0 ms</span>
-              </div> <!-- configuration-class before -->
+              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">inValidEmail</span>
-                <span class="method-start">2010 ms</span>
+                <span class="method-name">PlaceHoldersVerification</span>
+                <span class="method-start">1658 ms</span>
               </div> <!-- test-method -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">verifylogin</span>
-                <span class="method-start">12061 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-class after">
+              <div class="configuration-method after">
                 <span class="method-name">TearDown</span>
-                <span class="method-start">18330 ms</span>
-              </div> <!-- configuration-class after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">pageObjectstestCases.NavigationTest</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
+                <span class="method-start">2143 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
                 <span class="method-name">SetUp(windows, chrome)</span>
-                <span class="method-start">18393 ms</span>
-              </div> <!-- configuration-class before -->
+                <span class="method-start">2243 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">DifferentWayToNavigateRegisterAccount</span>
-                <span class="method-start">19407 ms</span>
+                <span class="method-name">RegistaringAccountWithNewsLetterEnabled</span>
+                <span class="method-start">3794 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-class after">
+              <div class="configuration-method after">
                 <span class="method-name">TearDown</span>
-                <span class="method-start">21694 ms</span>
-              </div> <!-- configuration-class after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">pageObjectstestCases.RegistrationTest</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
+                <span class="method-start">5942 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
                 <span class="method-name">SetUp(windows, chrome)</span>
-                <span class="method-start">21744 ms</span>
-              </div> <!-- configuration-class before -->
+                <span class="method-start">6041 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">RegistaringAccountWithNewLetterEnabled</span>
-                <span class="method-start">22873 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">RegistaringAccountWithValidData</span>
-                <span class="method-start">24816 ms</span>
+                <span class="method-start">7380 ms</span>
               </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">ShouldNotRegisterWithKeyboardKeys</span>
-                <span class="method-start">24841 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-class after">
+              <div class="configuration-method after">
                 <span class="method-name">TearDown</span>
-                <span class="method-start">24842 ms</span>
-              </div> <!-- configuration-class after -->
+                <span class="method-start">8884 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">SetUp(windows, chrome)</span>
+                <span class="method-start">8979 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">ShouldNotRegisterWithInValidEmail</span>
+                <span class="method-start">10307 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">TearDown</span>
+                <span class="method-start">11035 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">SetUp(windows, chrome)</span>
+                <span class="method-start">11128 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">ShouldNotRegisterWithKeyboardKeys</span>
+                <span class="method-start">12594 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">TearDown</span>
+                <span class="method-start">13149 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">SetUp(windows, chrome)</span>
+                <span class="method-start">13242 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">ValidatingByRegisteringExistingAccount</span>
+                <span class="method-start">14884 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">TearDown</span>
+                <span class="method-start">15934 ms</span>
+              </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

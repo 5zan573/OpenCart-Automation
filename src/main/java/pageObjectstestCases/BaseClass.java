@@ -11,8 +11,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
 
 public class BaseClass {
@@ -20,7 +20,7 @@ public class BaseClass {
 	public WebDriver driver;
 	Properties p;
 
-	@BeforeClass
+	@BeforeMethod
 	@Parameters({ "os", "browser" })
 	public void SetUp(String os, String brow) throws IOException {
 
@@ -53,7 +53,7 @@ public class BaseClass {
 		driver.navigate().refresh();
 	}
 
-	@AfterClass
+	@AfterMethod
 	public void TearDown() {
 		driver.quit();
 	}
