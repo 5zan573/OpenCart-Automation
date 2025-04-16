@@ -165,7 +165,7 @@
                   </a> <!-- PlaceHoldersVerification -->
                   <span class="method-name">PlaceHoldersVerification</span>
                   <div class="stack-trace">java.lang.AssertionError: expected [input-firstname] but found [null]
-	at pageObjectstestCases.RegistrationTest.PlaceHoldersVerification(RegistrationTest.java:117)
+	at pageObjectstestCases.RegistrationTest.PlaceHoldersVerification(RegistrationTest.java:121)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 ... Removed 33 stack frames
 </div> <!-- stack-trace -->
@@ -176,10 +176,18 @@
                   <a name="ShouldNotRegisterWithKeyboardKeys">
                   </a> <!-- ShouldNotRegisterWithKeyboardKeys -->
                   <span class="method-name">ShouldNotRegisterWithKeyboardKeys</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [First Name must be between 1 and 32 characters!] but found []
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for text (&apos;First Name&apos;) to be present in element [[ChromeDriver: chrome on windows (a7e18d76d45ae60d4d8b9671c1f785e3)] -&gt; xpath: //fieldset[1]//div[1]//div[1]//div[1]] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.29.0&apos;, revision: &apos;5fc1ec94cb&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.99, chrome: {chromedriverVersion: 133.0.6943.141 (2a5d6da0d61..., userDataDir: C:\Users\user\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55658}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55658/devtoo..., se:cdpVersion: 133.0.6943.99, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a7e18d76d45ae60d4d8b9671c1f785e3
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at pageObjects.registerPage.FnameErrorMessage(registerPage.java:121)
 	at pageObjectstestCases.RegistrationTest.ShouldNotRegisterWithKeyboardKeys(RegistrationTest.java:94)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 33 stack frames
+... Removed 27 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -277,34 +285,34 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(6);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'RegistaringAccountWithNewsLetterEnabled')
+data.setCell(0, 1, 'ShouldNotRegisterWithKeyboardKeys')
 data.setCell(0, 2, 'pageObjectstestCases.RegistrationTest')
-data.setCell(0, 3, 2148);
+data.setCell(0, 3, 10816);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'RegistaringAccountWithValidData')
+data.setCell(1, 1, 'RegistaringAccountWithNewsLetterEnabled')
 data.setCell(1, 2, 'pageObjectstestCases.RegistrationTest')
-data.setCell(1, 3, 1503);
+data.setCell(1, 3, 1433);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'ValidatingByRegisteringExistingAccount')
+data.setCell(2, 1, 'RegistaringAccountWithValidData')
 data.setCell(2, 2, 'pageObjectstestCases.RegistrationTest')
-data.setCell(2, 3, 1049);
+data.setCell(2, 3, 1390);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'ShouldNotRegisterWithInValidEmail')
+data.setCell(3, 1, 'ValidatingByRegisteringExistingAccount')
 data.setCell(3, 2, 'pageObjectstestCases.RegistrationTest')
-data.setCell(3, 3, 727);
+data.setCell(3, 3, 945);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'ShouldNotRegisterWithKeyboardKeys')
+data.setCell(4, 1, 'ShouldNotRegisterWithInValidEmail')
 data.setCell(4, 2, 'pageObjectstestCases.RegistrationTest')
-data.setCell(4, 3, 554);
+data.setCell(4, 3, 750);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'PlaceHoldersVerification')
 data.setCell(5, 2, 'pageObjectstestCases.RegistrationTest')
-data.setCell(5, 3, 483);
+data.setCell(5, 3, 517);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 6 seconds</span>
+              <span class="suite-total-time">Total running time: 15 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -339,73 +347,73 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">PlaceHoldersVerification</span>
-                <span class="method-start">1658 ms</span>
+                <span class="method-start">1947 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">TearDown</span>
-                <span class="method-start">2143 ms</span>
+                <span class="method-start">2467 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">SetUp(windows, chrome)</span>
-                <span class="method-start">2243 ms</span>
+                <span class="method-start">2565 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">RegistaringAccountWithNewsLetterEnabled</span>
-                <span class="method-start">3794 ms</span>
+                <span class="method-start">3844 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">TearDown</span>
-                <span class="method-start">5942 ms</span>
+                <span class="method-start">5278 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">SetUp(windows, chrome)</span>
-                <span class="method-start">6041 ms</span>
+                <span class="method-start">5373 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">RegistaringAccountWithValidData</span>
-                <span class="method-start">7380 ms</span>
+                <span class="method-start">6673 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">TearDown</span>
-                <span class="method-start">8884 ms</span>
+                <span class="method-start">8064 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">SetUp(windows, chrome)</span>
-                <span class="method-start">8979 ms</span>
+                <span class="method-start">8170 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">ShouldNotRegisterWithInValidEmail</span>
-                <span class="method-start">10307 ms</span>
+                <span class="method-start">9870 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">TearDown</span>
-                <span class="method-start">11035 ms</span>
+                <span class="method-start">10621 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">SetUp(windows, chrome)</span>
-                <span class="method-start">11128 ms</span>
+                <span class="method-start">10715 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">ShouldNotRegisterWithKeyboardKeys</span>
-                <span class="method-start">12594 ms</span>
+                <span class="method-start">12157 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">TearDown</span>
-                <span class="method-start">13149 ms</span>
+                <span class="method-start">22975 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">SetUp(windows, chrome)</span>
-                <span class="method-start">13242 ms</span>
+                <span class="method-start">23070 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">ValidatingByRegisteringExistingAccount</span>
-                <span class="method-start">14884 ms</span>
+                <span class="method-start">24409 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">TearDown</span>
-                <span class="method-start">15934 ms</span>
+                <span class="method-start">25355 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

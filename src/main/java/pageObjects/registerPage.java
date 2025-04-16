@@ -1,10 +1,13 @@
 package pageObjects;
 
+import java.time.Duration;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.FluentWait;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class registerPage extends BasePage {
 
@@ -42,16 +45,16 @@ public class registerPage extends BasePage {
 	@FindBy(xpath = "//body//div//dirv")
 	WebElement warning;
 
-	@FindBy(id = "error-firstname")
+	@FindBy(xpath = "//fieldset[1]//div[1]//div[1]//div[1]")
 	WebElement fnameerrormessage;
 
-	@FindBy(id = "error-lastname")
+	@FindBy(xpath = "//fieldset[1]//div[1]//div[1]//div[1]")
 	WebElement lnameerrormessage;
 
-	@FindBy(id = "error-email")
+	@FindBy(xpath = "//fieldset[1]//div[1]//div[1]//div[1]")
 	WebElement emailerrormessage;
 
-	@FindBy(id = "error-password")
+	@FindBy(xpath = "//fieldset[1]//div[1]//div[1]//div[1]")
 	WebElement passerrormessage;
 
 	@FindBy(css = "label[for='input-firstname']")
@@ -113,19 +116,25 @@ public class registerPage extends BasePage {
 	}
 
 	public String FnameErrorMessage() {
+
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		wait.until(ExpectedConditions.textToBePresentInElement(fnameerrormessage, "First Name"));
 		return fnameerrormessage.getText();
 
 	}
 
 	public String LnameErrorMessage() {
+		lname.sendKeys(" ");
 		return lnameerrormessage.getText();
 	}
 
 	public String EmailErrorMessage() {
+		txtemail.sendKeys(" ");
 		return emailerrormessage.getText();
 	}
 
 	public String PasswordErrorMessage() {
+		pass.sendKeys(" ");
 		return passerrormessage.getText();
 	}
 

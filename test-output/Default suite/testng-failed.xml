@@ -3,41 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="pageObjectstestCases.loginwithwithValidEmail">
+      <class name="pageObjectstestCases.RegistrationTest">
         <methods>
           <include name="TearDown"/>
           <include name="SetUp"/>
-          <include name="verifylogin"/>
+          <include name="ShouldNotRegisterWithKeyboardKeys"/>
         </methods>
-      </class> <!-- pageObjectstestCases.loginwithwithValidEmail -->
-      <class name="pageObjectstestCases.NewsletterOptionYes">
-        <methods>
-          <include name="AccountRegisterwithNewsletter"/>
-          <include name="TearDown"/>
-          <include name="SetUp"/>
-        </methods>
-      </class> <!-- pageObjectstestCases.NewsletterOptionYes -->
-      <class name="pageObjectstestCases.AccountRegistrationByProvidingAllFields">
-        <methods>
-          <include name="TearDown"/>
-          <include name="SetUp"/>
-          <include name="navigateToRegistration"/>
-        </methods>
-      </class> <!-- pageObjectstestCases.AccountRegistrationByProvidingAllFields -->
-      <class name="pageObjectstestCases.loginwithInvalidEmail">
-        <methods>
-          <include name="TearDown"/>
-          <include name="SetUp"/>
-          <include name="inValidEmail"/>
-        </methods>
-      </class> <!-- pageObjectstestCases.loginwithInvalidEmail -->
-      <class name="pageObjectstestCases.DifferentWaysToNavigateToRegisterAccount">
-        <methods>
-          <include name="TearDown"/>
-          <include name="SetUp"/>
-          <include name="DifferentWayToNavigateRegisterAccount"/>
-        </methods>
-      </class> <!-- pageObjectstestCases.DifferentWaysToNavigateToRegisterAccount -->
+      </class> <!-- pageObjectstestCases.RegistrationTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

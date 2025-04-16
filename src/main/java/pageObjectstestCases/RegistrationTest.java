@@ -90,20 +90,24 @@ public class RegistrationTest extends BaseClass {
 		hp.registeraccount();
 
 		registerPage rp = new registerPage(driver);
-		rp.fname(" ");
-		Assert.assertEquals(rp.FnameErrorMessage(), "First Name must be between 1 and 32 characters!");
 
-		rp.lname(" ");
-		Assert.assertEquals(rp.LnameErrorMessage(), "Last Name must be between 1 and 32 characters!");
-
-		rp.email(" ");
-		Assert.assertEquals(rp.EmailErrorMessage(), "E-Mail Address does not appear to be valid!");
-
-		rp.password(" ");
-		Assert.assertEquals(rp.PasswordErrorMessage(), "Password must be between 4 and 20 characters!");
-
+		String fnameError = rp.FnameErrorMessage();
+		String lnameError = rp.LnameErrorMessage();
+		String emailError = rp.EmailErrorMessage();
+		String passerror = rp.PasswordErrorMessage();
 		rp.policy();
 		rp.continuebtn();
+
+		System.out.println(fnameError);
+
+		Assert.assertEquals(fnameError, "First Name must be between 1 and 32 characters!");
+
+		Assert.assertEquals(lnameError, "Last Name must be between 1 and 32 characters!");
+
+		Assert.assertEquals(emailError, "E-Mail Address does not appear to be valid!");
+
+		Assert.assertEquals(passerror, "Password must be between 4 and 20 characters!");
+
 	}
 
 //TC_RF_013

@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>4/2/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Apr 14 22:00:34 IST 2025</td>
+<td>Started on:</td><td>Wed Apr 16 23:36:13 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>16 seconds (16035 ms)</td>
+<tr><td>Total time:</td><td>25 seconds (25456 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,19 +75,29 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='pageObjectstestCases.RegistrationTest.PlaceHoldersVerification()'><b>PlaceHoldersVerification</b><br>Test class: pageObjectstestCases.RegistrationTest</td>
-<td><div><pre>java.lang.AssertionError: expected [input-firstname] but found [null]
-	at pageObjectstestCases.RegistrationTest.PlaceHoldersVerification(RegistrationTest.java:117)
+<td title='pageObjectstestCases.RegistrationTest.ShouldNotRegisterWithKeyboardKeys()'><b>ShouldNotRegisterWithKeyboardKeys</b><br>Test class: pageObjectstestCases.RegistrationTest</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for text (&apos;First Name&apos;) to be present in element [[ChromeDriver: chrome on windows (a7e18d76d45ae60d4d8b9671c1f785e3)] -&gt; xpath: //fieldset[1]//div[1]//div[1]//div[1]] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.29.0&apos;, revision: &apos;5fc1ec94cb&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.99, chrome: {chromedriverVersion: 133.0.6943.141 (2a5d6da0d61..., userDataDir: C:\Users\user\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55658}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55658/devtoo..., se:cdpVersion: 133.0.6943.99, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a7e18d76d45ae60d4d8b9671c1f785e3
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at pageObjects.registerPage.FnameErrorMessage(registerPage.java:121)
+	at pageObjectstestCases.RegistrationTest.ShouldNotRegisterWithKeyboardKeys(RegistrationTest.java:94)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace913746983", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace913746983'><pre>java.lang.AssertionError: expected [input-firstname] but found [null]
-	at org.testng.Assert.fail(Assert.java:99)
-	at org.testng.Assert.failNotEquals(Assert.java:1037)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
-	at org.testng.Assert.assertEquals(Assert.java:122)
-	at org.testng.Assert.assertEquals(Assert.java:629)
-	at org.testng.Assert.assertEquals(Assert.java:639)
-	at pageObjectstestCases.RegistrationTest.PlaceHoldersVerification(RegistrationTest.java:117)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace924393200", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace924393200'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for text (&apos;First Name&apos;) to be present in element [[ChromeDriver: chrome on windows (a7e18d76d45ae60d4d8b9671c1f785e3)] -&gt; xpath: //fieldset[1]//div[1]//div[1]//div[1]] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.29.0&apos;, revision: &apos;5fc1ec94cb&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.99, chrome: {chromedriverVersion: 133.0.6943.141 (2a5d6da0d61..., userDataDir: C:\Users\user\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55658}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55658/devtoo..., se:cdpVersion: 133.0.6943.99, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a7e18d76d45ae60d4d8b9671c1f785e3
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at pageObjects.registerPage.FnameErrorMessage(registerPage.java:121)
+	at pageObjectstestCases.RegistrationTest.ShouldNotRegisterWithKeyboardKeys(RegistrationTest.java:94)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -117,22 +127,22 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>0</td>
+<td>10</td>
 <td>pageObjectstestCases.RegistrationTest@5b03b9fe</td></tr>
 <tr>
-<td title='pageObjectstestCases.RegistrationTest.ShouldNotRegisterWithKeyboardKeys()'><b>ShouldNotRegisterWithKeyboardKeys</b><br>Test class: pageObjectstestCases.RegistrationTest</td>
-<td><div><pre>java.lang.AssertionError: expected [First Name must be between 1 and 32 characters!] but found []
-	at pageObjectstestCases.RegistrationTest.ShouldNotRegisterWithKeyboardKeys(RegistrationTest.java:94)
+<td title='pageObjectstestCases.RegistrationTest.PlaceHoldersVerification()'><b>PlaceHoldersVerification</b><br>Test class: pageObjectstestCases.RegistrationTest</td>
+<td><div><pre>java.lang.AssertionError: expected [input-firstname] but found [null]
+	at pageObjectstestCases.RegistrationTest.PlaceHoldersVerification(RegistrationTest.java:121)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1109020385", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1109020385'><pre>java.lang.AssertionError: expected [First Name must be between 1 and 32 characters!] but found []
+... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1381857776", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1381857776'><pre>java.lang.AssertionError: expected [input-firstname] but found [null]
 	at org.testng.Assert.fail(Assert.java:99)
 	at org.testng.Assert.failNotEquals(Assert.java:1037)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
 	at org.testng.Assert.assertEquals(Assert.java:122)
 	at org.testng.Assert.assertEquals(Assert.java:629)
 	at org.testng.Assert.assertEquals(Assert.java:639)
-	at pageObjectstestCases.RegistrationTest.ShouldNotRegisterWithKeyboardKeys(RegistrationTest.java:94)
+	at pageObjectstestCases.RegistrationTest.PlaceHoldersVerification(RegistrationTest.java:121)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -173,14 +183,14 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='pageObjectstestCases.RegistrationTest.ValidatingByRegisteringExistingAccount()'><b>ValidatingByRegisteringExistingAccount</b><br>Test class: pageObjectstestCases.RegistrationTest</td>
+<td title='pageObjectstestCases.RegistrationTest.ShouldNotRegisterWithInValidEmail()'><b>ShouldNotRegisterWithInValidEmail</b><br>Test class: pageObjectstestCases.RegistrationTest</td>
 <td></td>
-<td>1</td>
+<td>0</td>
 <td>pageObjectstestCases.RegistrationTest@5b03b9fe</td></tr>
 <tr>
 <td title='pageObjectstestCases.RegistrationTest.RegistaringAccountWithNewsLetterEnabled()'><b>RegistaringAccountWithNewsLetterEnabled</b><br>Test class: pageObjectstestCases.RegistrationTest</td>
 <td></td>
-<td>2</td>
+<td>1</td>
 <td>pageObjectstestCases.RegistrationTest@5b03b9fe</td></tr>
 <tr>
 <td title='pageObjectstestCases.RegistrationTest.RegistaringAccountWithValidData()'><b>RegistaringAccountWithValidData</b><br>Test class: pageObjectstestCases.RegistrationTest</td>
@@ -188,7 +198,7 @@ function toggleAllBoxes() {
 <td>1</td>
 <td>pageObjectstestCases.RegistrationTest@5b03b9fe</td></tr>
 <tr>
-<td title='pageObjectstestCases.RegistrationTest.ShouldNotRegisterWithInValidEmail()'><b>ShouldNotRegisterWithInValidEmail</b><br>Test class: pageObjectstestCases.RegistrationTest</td>
+<td title='pageObjectstestCases.RegistrationTest.ValidatingByRegisteringExistingAccount()'><b>ValidatingByRegisteringExistingAccount</b><br>Test class: pageObjectstestCases.RegistrationTest</td>
 <td></td>
 <td>0</td>
 <td>pageObjectstestCases.RegistrationTest@5b03b9fe</td></tr>
