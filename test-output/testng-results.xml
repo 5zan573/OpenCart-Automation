@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="6" passed="4" failed="2" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-04-16T23:36:13 IST" name="Suite" finished-at="2025-04-16T23:36:39 IST" duration-ms="25456">
+  <suite started-at="2025-04-19T16:38:23 IST" name="Suite" finished-at="2025-04-19T16:38:31 IST" duration-ms="8065">
     <groups>
     </groups>
-    <test started-at="2025-04-16T23:36:13 IST" name="Test" finished-at="2025-04-16T23:36:39 IST" duration-ms="25456">
+    <test started-at="2025-04-19T16:38:23 IST" name="Test" finished-at="2025-04-19T16:38:31 IST" duration-ms="8065">
       <class name="pageObjectstestCases.RegistrationTest">
-        <test-method is-config="true" signature="SetUp(java.lang.String,java.lang.String)[pri:0, instance:pageObjectstestCases.RegistrationTest@5b03b9fe]" started-at="2025-04-16T23:36:13 IST" name="SetUp" finished-at="2025-04-16T23:36:15 IST" duration-ms="1946" status="PASS">
+        <test-method is-config="true" signature="SetUp(java.lang.String,java.lang.String)[pri:0, instance:pageObjectstestCases.RegistrationTest@5b03b9fe]" started-at="2025-04-19T16:38:23 IST" name="SetUp" finished-at="2025-04-19T16:38:31 IST" duration-ms="7915" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -23,20 +23,50 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SetUp -->
-        <test-method signature="PlaceHoldersVerification()[pri:0, instance:pageObjectstestCases.RegistrationTest@5b03b9fe]" started-at="2025-04-16T23:36:15 IST" name="PlaceHoldersVerification" finished-at="2025-04-16T23:36:16 IST" duration-ms="517" status="FAIL">
-          <exception class="java.lang.AssertionError">
+        <test-method signature="ShouldNotRegisterWithKeyboardKeys()[pri:0, instance:pageObjectstestCases.RegistrationTest@5b03b9fe]" started-at="2025-04-19T16:38:31 IST" name="ShouldNotRegisterWithKeyboardKeys" finished-at="2025-04-19T16:38:31 IST" duration-ms="74" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchSessionException">
             <message>
-              <![CDATA[expected [input-firstname] but found [null]]]>
+              <![CDATA[invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=133.0.6943.99)
+Build info: version: '4.29.0', revision: '5fc1ec94cb'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8b6f41a0c19fc48b563becd6bde0aa5b, findElement {using=xpath, value=//span[normalize-space()='My Account']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.99, chrome: {chromedriverVersion: 133.0.6943.141 (2a5d6da0d61..., userDataDir: C:\Users\user\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50983}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50983/devtoo..., se:cdpVersion: 133.0.6943.99, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8b6f41a0c19fc48b563becd6bde0aa5b]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [input-firstname] but found [null]
-at org.testng.Assert.fail(Assert.java:99)
-at org.testng.Assert.failNotEquals(Assert.java:1037)
-at org.testng.Assert.assertEqualsImpl(Assert.java:140)
-at org.testng.Assert.assertEquals(Assert.java:122)
-at org.testng.Assert.assertEquals(Assert.java:629)
-at org.testng.Assert.assertEquals(Assert.java:639)
-at pageObjectstestCases.RegistrationTest.PlaceHoldersVerification(RegistrationTest.java:121)
+              <![CDATA[org.openqa.selenium.NoSuchSessionException: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=133.0.6943.99)
+Build info: version: '4.29.0', revision: '5fc1ec94cb'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8b6f41a0c19fc48b563becd6bde0aa5b, findElement {using=xpath, value=//span[normalize-space()='My Account']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.99, chrome: {chromedriverVersion: 133.0.6943.141 (2a5d6da0d61..., userDataDir: C:\Users\user\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50983}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50983/devtoo..., se:cdpVersion: 133.0.6943.99, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8b6f41a0c19fc48b563becd6bde0aa5b
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy14.click(Unknown Source)
+at pageObjects.homePage.myaccount(homePage.java:23)
+at pageObjectstestCases.RegistrationTest.ShouldNotRegisterWithKeyboardKeys(RegistrationTest.java:89)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -67,182 +97,11 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- PlaceHoldersVerification -->
-        <test-method is-config="true" signature="TearDown()[pri:0, instance:pageObjectstestCases.RegistrationTest@5b03b9fe]" started-at="2025-04-16T23:36:16 IST" name="TearDown" finished-at="2025-04-16T23:36:16 IST" duration-ms="98" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TearDown -->
-        <test-method is-config="true" signature="SetUp(java.lang.String,java.lang.String)[pri:0, instance:pageObjectstestCases.RegistrationTest@5b03b9fe]" started-at="2025-04-16T23:36:16 IST" name="SetUp" finished-at="2025-04-16T23:36:17 IST" duration-ms="1279" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[windows]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- SetUp -->
-        <test-method signature="RegistaringAccountWithNewsLetterEnabled()[pri:0, instance:pageObjectstestCases.RegistrationTest@5b03b9fe]" started-at="2025-04-16T23:36:17 IST" name="RegistaringAccountWithNewsLetterEnabled" finished-at="2025-04-16T23:36:19 IST" duration-ms="1433" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- RegistaringAccountWithNewsLetterEnabled -->
-        <test-method is-config="true" signature="TearDown()[pri:0, instance:pageObjectstestCases.RegistrationTest@5b03b9fe]" started-at="2025-04-16T23:36:19 IST" name="TearDown" finished-at="2025-04-16T23:36:19 IST" duration-ms="95" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TearDown -->
-        <test-method is-config="true" signature="SetUp(java.lang.String,java.lang.String)[pri:0, instance:pageObjectstestCases.RegistrationTest@5b03b9fe]" started-at="2025-04-16T23:36:19 IST" name="SetUp" finished-at="2025-04-16T23:36:20 IST" duration-ms="1300" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[windows]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- SetUp -->
-        <test-method signature="RegistaringAccountWithValidData()[pri:0, instance:pageObjectstestCases.RegistrationTest@5b03b9fe]" started-at="2025-04-16T23:36:20 IST" name="RegistaringAccountWithValidData" finished-at="2025-04-16T23:36:21 IST" duration-ms="1390" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- RegistaringAccountWithValidData -->
-        <test-method is-config="true" signature="TearDown()[pri:0, instance:pageObjectstestCases.RegistrationTest@5b03b9fe]" started-at="2025-04-16T23:36:21 IST" name="TearDown" finished-at="2025-04-16T23:36:21 IST" duration-ms="105" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TearDown -->
-        <test-method is-config="true" signature="SetUp(java.lang.String,java.lang.String)[pri:0, instance:pageObjectstestCases.RegistrationTest@5b03b9fe]" started-at="2025-04-16T23:36:21 IST" name="SetUp" finished-at="2025-04-16T23:36:23 IST" duration-ms="1700" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[windows]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- SetUp -->
-        <test-method signature="ShouldNotRegisterWithInValidEmail()[pri:0, instance:pageObjectstestCases.RegistrationTest@5b03b9fe]" started-at="2025-04-16T23:36:23 IST" name="ShouldNotRegisterWithInValidEmail" finished-at="2025-04-16T23:36:24 IST" duration-ms="750" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ShouldNotRegisterWithInValidEmail -->
-        <test-method is-config="true" signature="TearDown()[pri:0, instance:pageObjectstestCases.RegistrationTest@5b03b9fe]" started-at="2025-04-16T23:36:24 IST" name="TearDown" finished-at="2025-04-16T23:36:24 IST" duration-ms="93" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TearDown -->
-        <test-method is-config="true" signature="SetUp(java.lang.String,java.lang.String)[pri:0, instance:pageObjectstestCases.RegistrationTest@5b03b9fe]" started-at="2025-04-16T23:36:24 IST" name="SetUp" finished-at="2025-04-16T23:36:25 IST" duration-ms="1442" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[windows]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- SetUp -->
-        <test-method signature="ShouldNotRegisterWithKeyboardKeys()[pri:0, instance:pageObjectstestCases.RegistrationTest@5b03b9fe]" started-at="2025-04-16T23:36:25 IST" name="ShouldNotRegisterWithKeyboardKeys" finished-at="2025-04-16T23:36:36 IST" duration-ms="10816" status="FAIL">
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Expected condition failed: waiting for text ('First Name') to be present in element [[ChromeDriver: chrome on windows (a7e18d76d45ae60d4d8b9671c1f785e3)] -> xpath: //fieldset[1]//div[1]//div[1]//div[1]] (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: '4.29.0', revision: '5fc1ec94cb'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.99, chrome: {chromedriverVersion: 133.0.6943.141 (2a5d6da0d61..., userDataDir: C:\Users\user\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55658}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55658/devtoo..., se:cdpVersion: 133.0.6943.99, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: a7e18d76d45ae60d4d8b9671c1f785e3]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for text ('First Name') to be present in element [[ChromeDriver: chrome on windows (a7e18d76d45ae60d4d8b9671c1f785e3)] -> xpath: //fieldset[1]//div[1]//div[1]//div[1]] (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: '4.29.0', revision: '5fc1ec94cb'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.99, chrome: {chromedriverVersion: 133.0.6943.141 (2a5d6da0d61..., userDataDir: C:\Users\user\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55658}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55658/devtoo..., se:cdpVersion: 133.0.6943.99, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: a7e18d76d45ae60d4d8b9671c1f785e3
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-at pageObjects.registerPage.FnameErrorMessage(registerPage.java:121)
-at pageObjectstestCases.RegistrationTest.ShouldNotRegisterWithKeyboardKeys(RegistrationTest.java:94)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ShouldNotRegisterWithKeyboardKeys -->
-        <test-method is-config="true" signature="TearDown()[pri:0, instance:pageObjectstestCases.RegistrationTest@5b03b9fe]" started-at="2025-04-16T23:36:36 IST" name="TearDown" finished-at="2025-04-16T23:36:36 IST" duration-ms="95" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TearDown -->
-        <test-method is-config="true" signature="SetUp(java.lang.String,java.lang.String)[pri:0, instance:pageObjectstestCases.RegistrationTest@5b03b9fe]" started-at="2025-04-16T23:36:36 IST" name="SetUp" finished-at="2025-04-16T23:36:38 IST" duration-ms="1339" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[windows]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- SetUp -->
-        <test-method signature="ValidatingByRegisteringExistingAccount()[pri:0, instance:pageObjectstestCases.RegistrationTest@5b03b9fe]" started-at="2025-04-16T23:36:38 IST" name="ValidatingByRegisteringExistingAccount" finished-at="2025-04-16T23:36:39 IST" duration-ms="945" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ValidatingByRegisteringExistingAccount -->
-        <test-method is-config="true" signature="TearDown()[pri:0, instance:pageObjectstestCases.RegistrationTest@5b03b9fe]" started-at="2025-04-16T23:36:39 IST" name="TearDown" finished-at="2025-04-16T23:36:39 IST" duration-ms="84" status="PASS">
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:pageObjectstestCases.RegistrationTest@5b03b9fe]" started-at="2025-04-19T16:38:31 IST" name="TearDown" finished-at="2025-04-19T16:38:31 IST" duration-ms="53" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TearDown -->

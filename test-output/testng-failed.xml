@@ -10,7 +10,6 @@
           <include name="TearDown"/>
           <include name="SetUp"/>
           <include name="ShouldNotRegisterWithKeyboardKeys"/>
-          <include name="PlaceHoldersVerification"/>
         </methods>
       </class> <!-- pageObjectstestCases.RegistrationTest -->
     </classes>

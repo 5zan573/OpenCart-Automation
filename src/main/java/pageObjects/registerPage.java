@@ -45,16 +45,16 @@ public class registerPage extends BasePage {
 	@FindBy(xpath = "//body//div//dirv")
 	WebElement warning;
 
-	@FindBy(xpath = "//fieldset[1]//div[1]//div[1]//div[1]")
+	@FindBy(id = "error-firstname")
 	WebElement fnameerrormessage;
 
-	@FindBy(xpath = "//fieldset[1]//div[1]//div[1]//div[1]")
+	@FindBy(id = "error-lastname")
 	WebElement lnameerrormessage;
 
-	@FindBy(xpath = "//fieldset[1]//div[1]//div[1]//div[1]")
+	@FindBy(id = "error-email")
 	WebElement emailerrormessage;
 
-	@FindBy(xpath = "//fieldset[1]//div[1]//div[1]//div[1]")
+	@FindBy(id = "error-password")
 	WebElement passerrormessage;
 
 	@FindBy(css = "label[for='input-firstname']")
@@ -116,26 +116,12 @@ public class registerPage extends BasePage {
 	}
 
 	public String FnameErrorMessage() {
-
+		fname.sendKeys(" ");
+		policybtn.click();
+		continuebtn.click();
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-		wait.until(ExpectedConditions.textToBePresentInElement(fnameerrormessage, "First Name"));
+		wait.until(driver -> !fnameerrormessage.getText().trim().isEmpty());
 		return fnameerrormessage.getText();
-
-	}
-
-	public String LnameErrorMessage() {
-		lname.sendKeys(" ");
-		return lnameerrormessage.getText();
-	}
-
-	public String EmailErrorMessage() {
-		txtemail.sendKeys(" ");
-		return emailerrormessage.getText();
-	}
-
-	public String PasswordErrorMessage() {
-		pass.sendKeys(" ");
-		return passerrormessage.getText();
 	}
 
 	public String FnamePlaceHolder() {

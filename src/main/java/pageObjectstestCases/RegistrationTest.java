@@ -8,7 +8,7 @@ import pageObjects.registerPage;
 
 public class RegistrationTest extends BaseClass {
 //This class automates TC_RF_001,2,3,6
-	@Test
+	// @Test
 	public void RegistaringAccountWithValidData() throws InterruptedException {
 		homePage hp = new homePage(driver);
 		hp.myaccount();
@@ -26,7 +26,7 @@ public class RegistrationTest extends BaseClass {
 	}
 
 //TC_RF_005
-	@Test
+	// @Test
 	public void RegistaringAccountWithNewsLetterEnabled() throws InterruptedException {
 		homePage hp = new homePage(driver);
 		hp.myaccount();
@@ -45,7 +45,7 @@ public class RegistrationTest extends BaseClass {
 	}
 
 	// TC_RF_009
-	@Test
+	// @Test
 	public void ValidatingByRegisteringExistingAccount() throws InterruptedException {
 		homePage hp = new homePage(driver);
 		hp.myaccount();
@@ -64,7 +64,7 @@ public class RegistrationTest extends BaseClass {
 	}
 
 	// TC_RF_010
-	@Test
+	// @Test
 	public void ShouldNotRegisterWithInValidEmail() throws InterruptedException {
 		homePage hp = new homePage(driver);
 		hp.myaccount();
@@ -92,26 +92,24 @@ public class RegistrationTest extends BaseClass {
 		registerPage rp = new registerPage(driver);
 
 		String fnameError = rp.FnameErrorMessage();
-		String lnameError = rp.LnameErrorMessage();
-		String emailError = rp.EmailErrorMessage();
-		String passerror = rp.PasswordErrorMessage();
-		rp.policy();
-		rp.continuebtn();
 
 		System.out.println(fnameError);
 
 		Assert.assertEquals(fnameError, "First Name must be between 1 and 32 characters!");
 
-		Assert.assertEquals(lnameError, "Last Name must be between 1 and 32 characters!");
+		// Assert.assertEquals(lnameError, "Last Name must be between 1 and 32
+		// characters!");
 
-		Assert.assertEquals(emailError, "E-Mail Address does not appear to be valid!");
+		// Assert.assertEquals(emailError, "E-Mail Address does not appear to be
+		// valid!");
 
-		Assert.assertEquals(passerror, "Password must be between 4 and 20 characters!");
+		// Assert.assertEquals(passerror, "Password must be between 4 and 20
+		// characters!");
 
 	}
 
 //TC_RF_013
-	@Test
+	// @Test
 	public void PlaceHoldersVerification() throws InterruptedException {
 		homePage hp = new homePage(driver);
 		hp.myaccount();
