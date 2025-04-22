@@ -120,8 +120,35 @@ public class registerPage extends BasePage {
 		policybtn.click();
 		continuebtn.click();
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-		wait.until(driver -> !fnameerrormessage.getText().trim().isEmpty());
+		wait.until(ExpectedConditions.visibilityOf(fnameerrormessage));
 		return fnameerrormessage.getText();
+	}
+
+	public String lnameErrorMessage() {
+		lname.sendKeys(" ");
+		policybtn.click();
+		continuebtn.click();
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		wait.until(ExpectedConditions.visibilityOf(lnameerrormessage));
+		return lnameerrormessage.getText();
+	}
+
+	public String EmailErrorMessage() {
+		txtemail.sendKeys(" ");
+		policybtn.click();
+		continuebtn.click();
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		wait.until(ExpectedConditions.visibilityOf(emailerrormessage));
+		return emailerrormessage.getText();
+	}
+
+	public String PasswordErrorMessage() {
+		pass.sendKeys(" ");
+		policybtn.click();
+		continuebtn.click();
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		wait.until(ExpectedConditions.visibilityOf(passerrormessage));
+		return passerrormessage.getText();
 	}
 
 	public String FnamePlaceHolder() {

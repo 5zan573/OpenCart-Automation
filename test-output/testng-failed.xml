@@ -7,9 +7,9 @@
     <classes>
       <class name="pageObjectstestCases.RegistrationTest">
         <methods>
+          <include name="ShouldNotRegisterWithKeyboardKeysLname"/>
           <include name="TearDown"/>
           <include name="SetUp"/>
-          <include name="ShouldNotRegisterWithKeyboardKeys"/>
         </methods>
       </class> <!-- pageObjectstestCases.RegistrationTest -->
     </classes>
