@@ -9,7 +9,7 @@
         <methods>
           <include name="TearDown"/>
           <include name="SetUp"/>
-          <include name="LoggingInWithValidDetails"/>
+          <include name="LoggingInWithInValidDetails"/>
         </methods>
       </class> <!-- pageObjectstestCases.LoginTest -->
     </classes>

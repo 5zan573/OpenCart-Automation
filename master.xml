@@ -5,6 +5,8 @@
 	  <parameter name="os" value="windows"></parameter>
 	  <parameter name="browser" value="chrome"></parameter>
 	  
+	  
+	  
     <classes>
      <class name="pageObjectstestCases.LoginTest"/> 
      <!-- <class name="pageObjectstestCases.NavigationTest"/> -->

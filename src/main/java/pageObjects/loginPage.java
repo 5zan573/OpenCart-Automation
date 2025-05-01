@@ -3,6 +3,8 @@ package pageObjects;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.FluentWait;
 
 public class loginPage extends BasePage {
 
@@ -25,6 +27,9 @@ public class loginPage extends BasePage {
 	@FindBy(linkText = "Register")
 	WebElement clickonRegister;
 
+	@FindBy(id = "alert")
+	WebElement InValidDetailsError;
+
 	public void setemail(String email) {
 		emailtxt.sendKeys(email);
 	}
@@ -43,6 +48,13 @@ public class loginPage extends BasePage {
 
 	public void clickonRegister() {
 		clickonRegister.click();
+	}
+
+	public String InValidDetailsError() {
+		FluentWait wait = new FluentWait(driver);
+		wait.until(ExpectedConditions.visibilityOf(InValidDetailsError));
+
+		return InValidDetailsError.getText();
 	}
 
 }
