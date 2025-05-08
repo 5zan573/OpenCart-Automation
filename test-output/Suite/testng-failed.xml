@@ -8,8 +8,8 @@
       <class name="pageObjectstestCases.LoginTest">
         <methods>
           <include name="TearDown"/>
+          <include name="LoginingInWithInvalidEmail"/>
           <include name="SetUp"/>
-          <include name="LoggingInWithInValidDetails"/>
         </methods>
       </class> <!-- pageObjectstestCases.LoginTest -->
     </classes>

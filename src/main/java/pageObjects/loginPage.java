@@ -1,10 +1,12 @@
 package pageObjects;
 
+import java.time.Duration;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.FluentWait;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class loginPage extends BasePage {
 
@@ -29,6 +31,12 @@ public class loginPage extends BasePage {
 
 	@FindBy(id = "alert")
 	WebElement InValidDetailsError;
+	
+	@FindBy(xpath = "//div[@class='mb-3']//a")
+	WebElement ForgottenPasswordLink;
+	
+	@FindBy(xpath = "//title[text() = 'Forgot Your Password?']")
+	WebElement ForgotPasswordPageVerify;
 
 	public void setemail(String email) {
 		emailtxt.sendKeys(email);
@@ -51,10 +59,14 @@ public class loginPage extends BasePage {
 	}
 
 	public String InValidDetailsError() {
-		FluentWait wait = new FluentWait(driver);
-		wait.until(ExpectedConditions.visibilityOf(InValidDetailsError));
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofMillis(5000));
+		wait.until(ExpectedConditions.textToBePresentInElement(InValidDetailsError, "Warning: No match for E-Mail Address and/or Password."));
 
 		return InValidDetailsError.getText();
+	}
+	
+	public void ClickOnForgottenpassword() {
+		ForgottenPasswordLink.click();
 	}
 
 }

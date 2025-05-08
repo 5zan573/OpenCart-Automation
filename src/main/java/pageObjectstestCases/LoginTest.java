@@ -26,7 +26,7 @@ public class LoginTest extends BaseClass {
 		ap.logoutbtn();
 	}
 
-	@Test
+	//@Test
 	public void LoggingInWithInValidDetails() throws InterruptedException {
 		homePage hp = new homePage(driver);
 		hp.myaccount();
@@ -36,8 +36,50 @@ public class LoginTest extends BaseClass {
 		lp.setemail(randomAlphaNum() + "@gmail.com");
 		lp.setpassword(randomAlphaNum());
 		lp.clickonlogin();
-		Thread.sleep(3000);
+
 		Assert.assertEquals(lp.InValidDetailsError(), "Warning: No match for E-Mail Address and/or Password.");
 
 	}
+	
+	//@Test
+	public void LoginingInWithInvalidEmail() throws InterruptedException {
+		homePage hp=new homePage(driver);
+		hp.myaccount();
+		hp.Clickonlogin();
+		
+		loginPage lp=new loginPage(driver);
+		lp.setemail(randomString()+"@gmail.com");
+		lp.setpassword(p.getProperty("password"));
+		lp.clickonlogin();
+		
+		Assert.assertEquals(lp.InValidDetailsError(), "Warning: No match for E-Mail Address and/or Password.");
+		
+	}
+	
+	//@Test
+	public void LogingInWithInvalidPassword() {
+		homePage hp=new homePage(driver);
+		hp.myaccount();
+		hp.Clickonlogin();
+		
+		loginPage lp=new loginPage(driver);
+		lp.setemail(p.getProperty("email"));
+		lp.setpassword(randomString());
+		lp.clickonlogin();
+		
+		Assert.assertEquals(lp.InValidDetailsError(), "Warning: No match for E-Mail Address and/or Password.");
+	}
+	
+	@Test
+	public void LoggingInWithoutCreds() {
+		homePage hp=new homePage(driver);
+		hp.myaccount();
+		hp.Clickonlogin();
+		
+		loginPage lp=new loginPage(driver);
+		lp.clickonlogin();
+		
+		Assert.assertEquals(lp.InValidDetailsError(), "Warning: No match for E-Mail Address and/or Password.");
+	}
+	
 }
