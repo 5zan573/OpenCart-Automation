@@ -35,7 +35,7 @@ public class loginPage extends BasePage {
 	@FindBy(xpath = "//div[@class='mb-3']//a")
 	WebElement ForgottenPasswordLink;
 	
-	@FindBy(xpath = "//title[text() = 'Forgot Your Password?']")
+	@FindBy(tagName = "h1")
 	WebElement ForgotPasswordPageVerify;
 
 	public void setemail(String email) {
@@ -67,6 +67,12 @@ public class loginPage extends BasePage {
 	
 	public void ClickOnForgottenpassword() {
 		ForgottenPasswordLink.click();
+	}
+	
+	public String ForgetPasswordPageValidation() {
+		
+		return ForgotPasswordPageVerify.getText();
+				
 	}
 
 }

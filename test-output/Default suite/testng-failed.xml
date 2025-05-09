@@ -5,9 +5,9 @@
     <classes>
       <class name="pageObjectstestCases.LoginTest">
         <methods>
+          <include name="ForgotPageValidation"/>
           <include name="TearDown"/>
           <include name="SetUp"/>
-          <include name="LoggingInWithoutCreds"/>
         </methods>
       </class> <!-- pageObjectstestCases.LoginTest -->
     </classes>

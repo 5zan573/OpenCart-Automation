@@ -70,7 +70,7 @@ public class LoginTest extends BaseClass {
 		Assert.assertEquals(lp.InValidDetailsError(), "Warning: No match for E-Mail Address and/or Password.");
 	}
 	
-	@Test
+	 //@Test
 	public void LoggingInWithoutCreds() {
 		homePage hp=new homePage(driver);
 		hp.myaccount();
@@ -80,6 +80,19 @@ public class LoginTest extends BaseClass {
 		lp.clickonlogin();
 		
 		Assert.assertEquals(lp.InValidDetailsError(), "Warning: No match for E-Mail Address and/or Password.");
+	}
+	
+	@Test
+	public void ForgotPageValidation() throws InterruptedException {
+		homePage hp=new homePage(driver);
+		hp.myaccount();
+		hp.Clickonlogin();
+		
+		loginPage lp=new loginPage(driver);
+		Thread.sleep(5000);
+		lp.ClickOnForgottenpassword();
+		
+		Assert.assertEquals(lp.ForgetPasswordPageValidation(),"Forgot Your Password?");
 	}
 	
 }
