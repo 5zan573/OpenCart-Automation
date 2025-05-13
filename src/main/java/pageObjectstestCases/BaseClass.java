@@ -48,7 +48,7 @@ public class BaseClass {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 
 		Cookie cfcookie = new Cookie("cf_clearance",
-				"JyzIJ6kzZIzXWObP986ioXjOVGWUFll.BBfSAB5e8cs-1744880752-1.2.1.1-0Y7f8pcJneFHqhfimWOfYb7.NyzDL5pjALgmqnqApwAZCxnDIiN0yfgyH3QDBlFDGFhcHWWMZCFax7jGG6DGZpFQb1yl7lM.i8yT8MOqZ4Wx47qH3M_UmUfFCg_c_gTBQRpPLqaoN9B56e_LYuvyfY_jy66JuvC4fOMj4eDLSQjGUhFA3LSrNtvNKfZmj5VUVuDlMxRXArx3lG9SlsfctZT8PhYf77Dl76D4P.GZ43OLoeFTpjsudcRQFfOBhOfrCCPlc8Bc3YrAIeRMFzpmz9aGp7NJsYWuq_60Kd58zsXEQcQJOp5tnt5iR8qEuaOPh2QMzPK6h0FKFBfg8eDluFyhjc8Dvin7iMzV3KKc11w2iW0.JQpgpMDKOVrWf1Gt");
+				"An7SrpEZ3FZZY3OF2YHYORvdKZ7_7XRKZ6TiCgKfeG0-1747126758-1.2.1.1-7w0gbjWMLBKF959.Aeg5HiD_VmL7tGUphndnp86GOtN__XDEu.a4PgkOJqYOElxN3.J1wgTd7YXqLa4dOo2ZjRXGw9rGqDefwZ2DGKfYeNOpSfPYREvBRfX7SK3Yb_sANBOgf.nL5NeZTfa.Pf0Th.kCS9hS2h2Udx9.83tgL7W5hBLDJTo1SNrqsVlBlX_qScuPSewZwrbonPCq1ZjadGsii_rLgUk5UGaXdgQ6dVKyxKb97Wvglher87s9C0duRHNqXXIJExabVqiqlV8jgQc6AxyYPxl30vyusvHU1Z4ggalf.Fv683ieSekWIvDs6tVIVvnA056p2Xk123BUGGxc81VtX11HW3FeCW.fSOPOPy3AFEl5pHKG8wb6A1Yb");
 		driver.manage().addCookie(cfcookie);
 		driver.navigate().refresh();
 	}

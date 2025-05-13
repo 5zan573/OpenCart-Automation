@@ -37,6 +37,13 @@ public class loginPage extends BasePage {
 	
 	@FindBy(tagName = "h1")
 	WebElement ForgotPasswordPageVerify;
+	
+	@FindBy(xpath = "//label[text()='E-Mail Address']")
+	WebElement emailholdertxt;
+	
+	@FindBy(xpath = "//*[text()='Password']")
+	WebElement passwordholdertxt;
+	
 
 	public void setemail(String email) {
 		emailtxt.sendKeys(email);
@@ -71,8 +78,14 @@ public class loginPage extends BasePage {
 	
 	public String ForgetPasswordPageValidation() {
 		
-		return ForgotPasswordPageVerify.getText();
-				
+		return ForgotPasswordPageVerify.getText();			
 	}
-
+	
+	public String EmailHolderTxt() {
+		return emailholdertxt.getText();
+	}
+    
+	public String PasswordHolderTxt() {
+		return passwordholdertxt.getText();
+	}
 }
