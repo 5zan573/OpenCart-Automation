@@ -9,7 +9,7 @@ import pageObjects.myaccountPage;
 
 public class LoginTest extends BaseClass {
 
-	// @Test
+	@Test
 	public void LoggingInWithValidDetails() throws InterruptedException {
 		homePage hp = new homePage(driver);
 		hp.myaccount();
@@ -26,7 +26,7 @@ public class LoginTest extends BaseClass {
 		ap.logoutbtn();
 	}
 
-	//@Test
+	@Test
 	public void LoggingInWithInValidDetails() throws InterruptedException {
 		homePage hp = new homePage(driver);
 		hp.myaccount();
@@ -41,7 +41,7 @@ public class LoginTest extends BaseClass {
 
 	}
 	
-	//@Test
+	@Test
 	public void LoginingInWithInvalidEmail() throws InterruptedException {
 		homePage hp=new homePage(driver);
 		hp.myaccount();
@@ -56,7 +56,7 @@ public class LoginTest extends BaseClass {
 		
 	}
 	
-	//@Test
+	@Test
 	public void LogingInWithInvalidPassword() {
 		homePage hp=new homePage(driver);
 		hp.myaccount();
@@ -70,7 +70,7 @@ public class LoginTest extends BaseClass {
 		Assert.assertEquals(lp.InValidDetailsError(), "Warning: No match for E-Mail Address and/or Password.");
 	}
 	
-	 //@Test
+	@Test
 	public void LoggingInWithoutCreds() {
 		homePage hp=new homePage(driver);
 		hp.myaccount();
@@ -82,7 +82,7 @@ public class LoginTest extends BaseClass {
 		Assert.assertEquals(lp.InValidDetailsError(), "Warning: No match for E-Mail Address and/or Password.");
 	}
 	
-	//@Test
+	@Test
 	public void ForgotPageValidation() throws InterruptedException {
 		homePage hp=new homePage(driver);
 		hp.myaccount();
@@ -97,10 +97,12 @@ public class LoginTest extends BaseClass {
 	
 	@Test
 	public void ValidatingEmailPlaceHolderTxt() {
+		logger.info("ValidatingEmailPlaceHolderTxt");
 		homePage hp=new homePage(driver);
 		hp.myaccount();
+		logger.trace("clicked on myaccount");
 		hp.Clickonlogin();
-		
+		logger.info("clicked on login");
 		loginPage lp=new loginPage(driver);
 		Assert.assertEquals(lp.EmailHolderTxt(), "E-Mail Address");
 		Assert.assertEquals(lp.PasswordHolderTxt(), "Password");

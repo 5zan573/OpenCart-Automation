@@ -1,0 +1,81 @@
+[INFO ] 2025-05-20 14:43:42.728 [main] LoginTest - This is info message
+[DEBUG] 2025-05-20 14:43:42.730 [main] LoginTest - This is Debug message
+[INFO ] 2025-05-20 14:43:45.061 [main] LoginTest - ValidatingEmailPlaceHolderTxt
+[TRACE] 2025-05-20 14:43:45.188 [main] LoginTest - clicked on myaccount
+[INFO ] 2025-05-20 14:43:45.576 [main] LoginTest - clicked on login
+[INFO ] 2025-05-20 15:30:59.015 [main] LoginTest - This is info message
+[DEBUG] 2025-05-20 15:30:59.016 [main] LoginTest - This is Debug message
+[INFO ] 2025-05-20 15:31:01.138 [main] LoginTest - ValidatingEmailPlaceHolderTxt
+[TRACE] 2025-05-20 15:31:01.272 [main] LoginTest - clicked on myaccount
+[INFO ] 2025-05-20 15:31:01.679 [main] LoginTest - clicked on login
+[INFO ] 2025-05-20 15:37:10.059 [main] LoginTest - This is info message
+[DEBUG] 2025-05-20 15:37:10.061 [main] LoginTest - This is Debug message
+[INFO ] 2025-05-20 15:37:12.291 [main] LoginTest - ValidatingEmailPlaceHolderTxt
+[TRACE] 2025-05-20 15:37:12.399 [main] LoginTest - clicked on myaccount
+[INFO ] 2025-05-20 15:37:12.802 [main] LoginTest - clicked on login
+[INFO ] 2025-05-20 15:38:44.533 [main] LoginTest - This is info message
+[DEBUG] 2025-05-20 15:38:44.536 [main] LoginTest - This is Debug message
+[INFO ] 2025-05-20 15:38:46.707 [main] LoginTest - ValidatingEmailPlaceHolderTxt
+[TRACE] 2025-05-20 15:38:46.818 [main] LoginTest - clicked on myaccount
+[INFO ] 2025-05-20 15:38:47.201 [main] LoginTest - clicked on login
+[INFO ] 2025-05-20 15:38:59.241 [main] LoginTest - This is info message
+[DEBUG] 2025-05-20 15:38:59.242 [main] LoginTest - This is Debug message
+[INFO ] 2025-05-20 15:39:00.908 [main] LoginTest - ValidatingEmailPlaceHolderTxt
+[TRACE] 2025-05-20 15:39:01.024 [main] LoginTest - clicked on myaccount
+[INFO ] 2025-05-20 15:39:01.447 [main] LoginTest - clicked on login
+[INFO ] 2025-05-20 15:55:00.683 [main] LoginTest - This is info message
+[DEBUG] 2025-05-20 15:55:00.685 [main] LoginTest - This is Debug message
+[INFO ] 2025-05-20 15:55:03.553 [main] LoginTest - ValidatingEmailPlaceHolderTxt
+[TRACE] 2025-05-20 15:55:03.678 [main] LoginTest - clicked on myaccount
+[INFO ] 2025-05-20 15:55:04.067 [main] LoginTest - clicked on login
+[INFO ] 2025-05-20 15:55:53.569 [main] LoginTest - This is info message
+[DEBUG] 2025-05-20 15:55:53.570 [main] LoginTest - This is Debug message
+[INFO ] 2025-05-20 15:56:01.228 [main] LoginTest - This is info message
+[DEBUG] 2025-05-20 15:56:01.228 [main] LoginTest - This is Debug message
+[INFO ] 2025-05-20 15:56:04.132 [main] LoginTest - This is info message
+[DEBUG] 2025-05-20 15:56:04.132 [main] LoginTest - This is Debug message
+[INFO ] 2025-05-20 15:56:06.493 [main] LoginTest - This is info message
+[DEBUG] 2025-05-20 15:56:06.493 [main] LoginTest - This is Debug message
+[INFO ] 2025-05-20 15:56:09.170 [main] LoginTest - This is info message
+[DEBUG] 2025-05-20 15:56:09.170 [main] LoginTest - This is Debug message
+[INFO ] 2025-05-20 15:56:11.624 [main] LoginTest - This is info message
+[DEBUG] 2025-05-20 15:56:11.624 [main] LoginTest - This is Debug message
+[INFO ] 2025-05-20 15:56:13.767 [main] LoginTest - This is info message
+[DEBUG] 2025-05-20 15:56:13.767 [main] LoginTest - This is Debug message
+[INFO ] 2025-05-20 15:56:15.221 [main] LoginTest - ValidatingEmailPlaceHolderTxt
+[TRACE] 2025-05-20 15:56:15.323 [main] LoginTest - clicked on myaccount
+[INFO ] 2025-05-20 15:56:15.727 [main] LoginTest - clicked on login
+[INFO ] 2025-05-20 15:58:32.734 [main] LoginTest - This is info message
+[DEBUG] 2025-05-20 15:58:32.736 [main] LoginTest - This is Debug message
+[INFO ] 2025-05-20 15:58:40.406 [main] LoginTest - This is info message
+[DEBUG] 2025-05-20 15:58:40.406 [main] LoginTest - This is Debug message
+[INFO ] 2025-05-20 15:58:43.079 [main] LoginTest - This is info message
+[DEBUG] 2025-05-20 15:58:43.080 [main] LoginTest - This is Debug message
+[INFO ] 2025-05-20 15:58:45.067 [main] LoginTest - This is info message
+[DEBUG] 2025-05-20 15:58:45.067 [main] LoginTest - This is Debug message
+[INFO ] 2025-05-20 15:58:47.813 [main] LoginTest - This is info message
+[DEBUG] 2025-05-20 15:58:47.813 [main] LoginTest - This is Debug message
+[INFO ] 2025-05-20 15:58:50.003 [main] LoginTest - This is info message
+[DEBUG] 2025-05-20 15:58:50.003 [main] LoginTest - This is Debug message
+[INFO ] 2025-05-20 15:58:52.197 [main] LoginTest - This is info message
+[DEBUG] 2025-05-20 15:58:52.197 [main] LoginTest - This is Debug message
+[INFO ] 2025-05-20 15:58:53.749 [main] LoginTest - ValidatingEmailPlaceHolderTxt
+[TRACE] 2025-05-20 15:58:53.851 [main] LoginTest - clicked on myaccount
+[INFO ] 2025-05-20 15:58:54.248 [main] LoginTest - clicked on login
+[INFO ] 2025-05-20 15:59:53.699 [main] LoginTest - This is info message
+[DEBUG] 2025-05-20 15:59:53.700 [main] LoginTest - This is Debug message
+[INFO ] 2025-05-20 16:00:02.050 [main] LoginTest - This is info message
+[DEBUG] 2025-05-20 16:00:02.050 [main] LoginTest - This is Debug message
+[INFO ] 2025-05-20 16:00:04.751 [main] LoginTest - This is info message
+[DEBUG] 2025-05-20 16:00:04.751 [main] LoginTest - This is Debug message
+[INFO ] 2025-05-20 16:00:08.624 [main] LoginTest - This is info message
+[DEBUG] 2025-05-20 16:00:08.624 [main] LoginTest - This is Debug message
+[INFO ] 2025-05-20 16:00:11.233 [main] LoginTest - This is info message
+[DEBUG] 2025-05-20 16:00:11.233 [main] LoginTest - This is Debug message
+[INFO ] 2025-05-20 16:00:13.937 [main] LoginTest - This is info message
+[DEBUG] 2025-05-20 16:00:13.937 [main] LoginTest - This is Debug message
+[INFO ] 2025-05-20 16:00:16.809 [main] LoginTest - This is info message
+[DEBUG] 2025-05-20 16:00:16.809 [main] LoginTest - This is Debug message
+[INFO ] 2025-05-20 16:00:18.297 [main] LoginTest - ValidatingEmailPlaceHolderTxt
+[TRACE] 2025-05-20 16:00:18.399 [main] LoginTest - clicked on myaccount
+[INFO ] 2025-05-20 16:00:18.797 [main] LoginTest - clicked on login

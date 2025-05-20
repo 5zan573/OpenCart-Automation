@@ -6,6 +6,8 @@ import java.time.Duration;
 import java.util.Properties;
 
 import org.apache.commons.lang3.RandomStringUtils;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.Cookie;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -18,11 +20,15 @@ import org.testng.annotations.Parameters;
 public class BaseClass {
 
 	public WebDriver driver;
-	Properties p;
+	public Properties p;
+	public Logger logger;
+	
 
 	@BeforeMethod
 	@Parameters({ "os", "browser" })
 	public void SetUp(String os, String brow) throws IOException {
+
+		 logger=LogManager.getLogger(this.getClass());
 
 		switch (brow.toLowerCase()) {
 		case "chrome":
