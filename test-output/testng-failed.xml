@@ -11,10 +11,8 @@
       <class name="pageObjectstestCases.LoginTest">
         <methods>
           <include name="TearDown"/>
-          <include name="LoginingInWithInvalidEmail"/>
           <include name="SetUp"/>
-          <include name="LoggingInWithValidDetails"/>
-          <include name="LogingInWithInvalidPassword"/>
+          <include name="LoggingInWithoutCreds"/>
         </methods>
       </class> <!-- pageObjectstestCases.LoginTest -->
     </classes>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Surefire suite]" verbose="0">
+  <test thread-count="5" name="Surefire test(failed)" verbose="0">
+    <classes>
+      <class name="pageObjectstestCases.LoginTest">
+        <methods>
+          <include name="ForgotPageValidation"/>
+          <include name="TearDown"/>
+          <include name="SetUp"/>
+          <include name="LoginingInWithInvalidEmail"/>
+          <include name="LoggingInWithValidDetails"/>
+          <include name="ValidatingEmailPlaceHolderTxt"/>
+          <include name="LoggingInWithInValidDetails"/>
+          <include name="LogingInWithInvalidPassword"/>
+          <include name="LoggingInWithoutCreds"/>
+        </methods>
+      </class> <!-- pageObjectstestCases.LoginTest -->
+      <class name="pageObjectstestCases.RegistrationTest">
+        <methods>
+          <include name="ShouldNotRegisterWithKeyboardKeysLname"/>
+          <include name="TearDown"/>
+          <include name="SetUp"/>
+          <include name="RegistaringAccountWithValidData"/>
+          <include name="ShouldNotRegisterWithKeyboardKeys"/>
+          <include name="RegistaringAccountWithNewsLetterEnabled"/>
+          <include name="ShouldNotRegisterWithKeyboardKeysEmail"/>
+          <include name="ValidatingByRegisteringExistingAccount"/>
+          <include name="ShouldNotRegisterWithInValidEmail"/>
+          <include name="PlaceHoldersVerification"/>
+          <include name="ShouldNotRegisterWithKeyboardKeysPassword"/>
+        </methods>
+      </class> <!-- pageObjectstestCases.RegistrationTest -->
+      <class name="pageObjectstestCases.NavigationTest">
+        <methods>
+          <include name="TearDown"/>
+          <include name="SetUp"/>
+          <include name="DifferentWayToNavigateRegisterAccount"/>
+        </methods>
+      </class> <!-- pageObjectstestCases.NavigationTest -->
+    </classes>
+  </test> <!-- Surefire test(failed) -->
+</suite> <!-- Failed suite [Surefire suite] -->

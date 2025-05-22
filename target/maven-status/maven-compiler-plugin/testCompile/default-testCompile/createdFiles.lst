@@ -1,0 +1,8 @@
+pageObjectstestCases\RegistrationTest.class
+utilities\ExtentReport.class
+pageObjectstestCases\LoginTest.class
+utilities\Screenshot.class
+pageObjectstestCases\NavigationTest.class
+utilities\ExcelUtility.class
+utilities\Listeners.class
+pageObjectstestCases\BaseClass.class

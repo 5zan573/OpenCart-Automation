@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-05-20T15:59:53 IST" name="Master Suite" finished-at="2025-05-20T16:00:18 IST" duration-ms="25513">
+  <suite started-at="2025-05-22T16:53:49 IST" name="Master Suite" finished-at="2025-05-22T16:54:19 IST" duration-ms="30052">
     <groups>
     </groups>
-    <test started-at="2025-05-20T15:59:53 IST" name="Test" finished-at="2025-05-20T16:00:18 IST" duration-ms="25513">
+    <test started-at="2025-05-22T16:53:49 IST" name="Test" finished-at="2025-05-22T16:54:19 IST" duration-ms="30052">
       <class name="pageObjectstestCases.LoginTest">
-        <test-method is-config="true" signature="SetUp(java.lang.String,java.lang.String)[pri:0, instance:pageObjectstestCases.LoginTest@2805d709]" started-at="2025-05-20T15:59:53 IST" name="SetUp" finished-at="2025-05-20T15:59:55 IST" duration-ms="2515" status="PASS">
+        <test-method is-config="true" signature="SetUp(java.lang.String,java.lang.String)[pri:0, instance:pageObjectstestCases.LoginTest@7bab3f1a]" started-at="2025-05-22T16:53:49 IST" name="SetUp" finished-at="2025-05-22T16:53:53 IST" duration-ms="3660" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -23,63 +23,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SetUp -->
-        <test-method signature="ForgotPageValidation()[pri:0, instance:pageObjectstestCases.LoginTest@2805d709]" started-at="2025-05-20T15:59:55 IST" name="ForgotPageValidation" finished-at="2025-05-20T16:00:01 IST" duration-ms="6014" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ForgotPageValidation -->
-        <test-method is-config="true" signature="TearDown()[pri:0, instance:pageObjectstestCases.LoginTest@2805d709]" started-at="2025-05-20T16:00:01 IST" name="TearDown" finished-at="2025-05-20T16:00:02 IST" duration-ms="92" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TearDown -->
-        <test-method is-config="true" signature="SetUp(java.lang.String,java.lang.String)[pri:0, instance:pageObjectstestCases.LoginTest@2805d709]" started-at="2025-05-20T16:00:02 IST" name="SetUp" finished-at="2025-05-20T16:00:03 IST" duration-ms="1397" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[windows]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- SetUp -->
-        <test-method signature="LoggingInWithInValidDetails()[pri:0, instance:pageObjectstestCases.LoginTest@2805d709]" started-at="2025-05-20T16:00:03 IST" name="LoggingInWithInValidDetails" finished-at="2025-05-20T16:00:04 IST" duration-ms="1201" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- LoggingInWithInValidDetails -->
-        <test-method is-config="true" signature="TearDown()[pri:0, instance:pageObjectstestCases.LoginTest@2805d709]" started-at="2025-05-20T16:00:04 IST" name="TearDown" finished-at="2025-05-20T16:00:04 IST" duration-ms="102" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TearDown -->
-        <test-method is-config="true" signature="SetUp(java.lang.String,java.lang.String)[pri:0, instance:pageObjectstestCases.LoginTest@2805d709]" started-at="2025-05-20T16:00:04 IST" name="SetUp" finished-at="2025-05-20T16:00:06 IST" duration-ms="1441" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[windows]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- SetUp -->
-        <test-method signature="LoggingInWithValidDetails()[pri:0, instance:pageObjectstestCases.LoginTest@2805d709]" started-at="2025-05-20T16:00:06 IST" name="LoggingInWithValidDetails" finished-at="2025-05-20T16:00:08 IST" duration-ms="2330" status="PASS">
+        <test-method signature="LoggingInWithValidDetails()[pri:1, instance:pageObjectstestCases.LoginTest@7bab3f1a]" started-at="2025-05-22T16:53:53 IST" name="LoggingInWithValidDetails" finished-at="2025-05-22T16:53:55 IST" duration-ms="2305" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoggingInWithValidDetails -->
-        <test-method is-config="true" signature="TearDown()[pri:0, instance:pageObjectstestCases.LoginTest@2805d709]" started-at="2025-05-20T16:00:08 IST" name="TearDown" finished-at="2025-05-20T16:00:08 IST" duration-ms="100" status="PASS">
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:pageObjectstestCases.LoginTest@7bab3f1a]" started-at="2025-05-22T16:53:55 IST" name="TearDown" finished-at="2025-05-22T16:53:56 IST" duration-ms="92" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TearDown -->
-        <test-method is-config="true" signature="SetUp(java.lang.String,java.lang.String)[pri:0, instance:pageObjectstestCases.LoginTest@2805d709]" started-at="2025-05-20T16:00:08 IST" name="SetUp" finished-at="2025-05-20T16:00:10 IST" duration-ms="1389" status="PASS">
+        <test-method is-config="true" signature="SetUp(java.lang.String,java.lang.String)[pri:0, instance:pageObjectstestCases.LoginTest@7bab3f1a]" started-at="2025-05-22T16:53:56 IST" name="SetUp" finished-at="2025-05-22T16:53:58 IST" duration-ms="2168" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -95,15 +47,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SetUp -->
-        <test-method signature="LoggingInWithoutCreds()[pri:0, instance:pageObjectstestCases.LoginTest@2805d709]" started-at="2025-05-20T16:00:10 IST" name="LoggingInWithoutCreds" finished-at="2025-05-20T16:00:11 IST" duration-ms="1118" status="PASS">
+        <test-method signature="LoggingInWithInValidDetails()[pri:2, instance:pageObjectstestCases.LoginTest@7bab3f1a]" started-at="2025-05-22T16:53:58 IST" name="LoggingInWithInValidDetails" finished-at="2025-05-22T16:53:59 IST" duration-ms="1172" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- LoggingInWithoutCreds -->
-        <test-method is-config="true" signature="TearDown()[pri:0, instance:pageObjectstestCases.LoginTest@2805d709]" started-at="2025-05-20T16:00:11 IST" name="TearDown" finished-at="2025-05-20T16:00:11 IST" duration-ms="101" status="PASS">
+        </test-method> <!-- LoggingInWithInValidDetails -->
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:pageObjectstestCases.LoginTest@7bab3f1a]" started-at="2025-05-22T16:53:59 IST" name="TearDown" finished-at="2025-05-22T16:53:59 IST" duration-ms="100" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TearDown -->
-        <test-method is-config="true" signature="SetUp(java.lang.String,java.lang.String)[pri:0, instance:pageObjectstestCases.LoginTest@2805d709]" started-at="2025-05-20T16:00:11 IST" name="SetUp" finished-at="2025-05-20T16:00:12 IST" duration-ms="1461" status="PASS">
+        <test-method is-config="true" signature="SetUp(java.lang.String,java.lang.String)[pri:0, instance:pageObjectstestCases.LoginTest@7bab3f1a]" started-at="2025-05-22T16:53:59 IST" name="SetUp" finished-at="2025-05-22T16:54:01 IST" duration-ms="2171" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -119,39 +71,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SetUp -->
-        <test-method signature="LogingInWithInvalidPassword()[pri:0, instance:pageObjectstestCases.LoginTest@2805d709]" started-at="2025-05-20T16:00:12 IST" name="LogingInWithInvalidPassword" finished-at="2025-05-20T16:00:13 IST" duration-ms="1141" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- LogingInWithInvalidPassword -->
-        <test-method is-config="true" signature="TearDown()[pri:0, instance:pageObjectstestCases.LoginTest@2805d709]" started-at="2025-05-20T16:00:13 IST" name="TearDown" finished-at="2025-05-20T16:00:13 IST" duration-ms="100" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TearDown -->
-        <test-method is-config="true" signature="SetUp(java.lang.String,java.lang.String)[pri:0, instance:pageObjectstestCases.LoginTest@2805d709]" started-at="2025-05-20T16:00:13 IST" name="SetUp" finished-at="2025-05-20T16:00:15 IST" duration-ms="1571" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[windows]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- SetUp -->
-        <test-method signature="LoginingInWithInvalidEmail()[pri:0, instance:pageObjectstestCases.LoginTest@2805d709]" started-at="2025-05-20T16:00:15 IST" name="LoginingInWithInvalidEmail" finished-at="2025-05-20T16:00:16 IST" duration-ms="1193" status="PASS">
+        <test-method signature="LoginingInWithInvalidEmail()[pri:3, instance:pageObjectstestCases.LoginTest@7bab3f1a]" started-at="2025-05-22T16:54:01 IST" name="LoginingInWithInvalidEmail" finished-at="2025-05-22T16:54:02 IST" duration-ms="1244" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginingInWithInvalidEmail -->
-        <test-method is-config="true" signature="TearDown()[pri:0, instance:pageObjectstestCases.LoginTest@2805d709]" started-at="2025-05-20T16:00:16 IST" name="TearDown" finished-at="2025-05-20T16:00:16 IST" duration-ms="106" status="PASS">
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:pageObjectstestCases.LoginTest@7bab3f1a]" started-at="2025-05-22T16:54:02 IST" name="TearDown" finished-at="2025-05-22T16:54:02 IST" duration-ms="97" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TearDown -->
-        <test-method is-config="true" signature="SetUp(java.lang.String,java.lang.String)[pri:0, instance:pageObjectstestCases.LoginTest@2805d709]" started-at="2025-05-20T16:00:16 IST" name="SetUp" finished-at="2025-05-20T16:00:18 IST" duration-ms="1488" status="PASS">
+        <test-method is-config="true" signature="SetUp(java.lang.String,java.lang.String)[pri:0, instance:pageObjectstestCases.LoginTest@7bab3f1a]" started-at="2025-05-22T16:54:02 IST" name="SetUp" finished-at="2025-05-22T16:54:04 IST" duration-ms="1791" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -167,11 +95,83 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SetUp -->
-        <test-method signature="ValidatingEmailPlaceHolderTxt()[pri:0, instance:pageObjectstestCases.LoginTest@2805d709]" started-at="2025-05-20T16:00:18 IST" name="ValidatingEmailPlaceHolderTxt" finished-at="2025-05-20T16:00:18 IST" duration-ms="547" status="PASS">
+        <test-method signature="LogingInWithInvalidPassword()[pri:4, instance:pageObjectstestCases.LoginTest@7bab3f1a]" started-at="2025-05-22T16:54:04 IST" name="LogingInWithInvalidPassword" finished-at="2025-05-22T16:54:06 IST" duration-ms="1233" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LogingInWithInvalidPassword -->
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:pageObjectstestCases.LoginTest@7bab3f1a]" started-at="2025-05-22T16:54:06 IST" name="TearDown" finished-at="2025-05-22T16:54:06 IST" duration-ms="88" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+        <test-method is-config="true" signature="SetUp(java.lang.String,java.lang.String)[pri:0, instance:pageObjectstestCases.LoginTest@7bab3f1a]" started-at="2025-05-22T16:54:06 IST" name="SetUp" finished-at="2025-05-22T16:54:07 IST" duration-ms="1756" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[windows]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUp -->
+        <test-method signature="LoggingInWithoutCreds()[pri:5, instance:pageObjectstestCases.LoginTest@7bab3f1a]" started-at="2025-05-22T16:54:07 IST" name="LoggingInWithoutCreds" finished-at="2025-05-22T16:54:08 IST" duration-ms="1106" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoggingInWithoutCreds -->
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:pageObjectstestCases.LoginTest@7bab3f1a]" started-at="2025-05-22T16:54:08 IST" name="TearDown" finished-at="2025-05-22T16:54:09 IST" duration-ms="91" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+        <test-method is-config="true" signature="SetUp(java.lang.String,java.lang.String)[pri:0, instance:pageObjectstestCases.LoginTest@7bab3f1a]" started-at="2025-05-22T16:54:09 IST" name="SetUp" finished-at="2025-05-22T16:54:10 IST" duration-ms="1772" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[windows]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUp -->
+        <test-method signature="ForgotPageValidation()[pri:6, instance:pageObjectstestCases.LoginTest@7bab3f1a]" started-at="2025-05-22T16:54:10 IST" name="ForgotPageValidation" finished-at="2025-05-22T16:54:16 IST" duration-ms="5956" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ForgotPageValidation -->
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:pageObjectstestCases.LoginTest@7bab3f1a]" started-at="2025-05-22T16:54:16 IST" name="TearDown" finished-at="2025-05-22T16:54:16 IST" duration-ms="101" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+        <test-method is-config="true" signature="SetUp(java.lang.String,java.lang.String)[pri:0, instance:pageObjectstestCases.LoginTest@7bab3f1a]" started-at="2025-05-22T16:54:16 IST" name="SetUp" finished-at="2025-05-22T16:54:19 IST" duration-ms="2310" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[windows]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUp -->
+        <test-method signature="ValidatingEmailPlaceHolderTxt()[pri:7, instance:pageObjectstestCases.LoginTest@7bab3f1a]" started-at="2025-05-22T16:54:19 IST" name="ValidatingEmailPlaceHolderTxt" finished-at="2025-05-22T16:54:19 IST" duration-ms="566" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ValidatingEmailPlaceHolderTxt -->
-        <test-method is-config="true" signature="TearDown()[pri:0, instance:pageObjectstestCases.LoginTest@2805d709]" started-at="2025-05-20T16:00:18 IST" name="TearDown" finished-at="2025-05-20T16:00:18 IST" duration-ms="78" status="PASS">
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:pageObjectstestCases.LoginTest@7bab3f1a]" started-at="2025-05-22T16:54:19 IST" name="TearDown" finished-at="2025-05-22T16:54:19 IST" duration-ms="87" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TearDown -->

@@ -9,7 +9,7 @@ import pageObjects.myaccountPage;
 
 public class LoginTest extends BaseClass {
 
-	@Test
+	@Test(priority = 1)
 	public void LoggingInWithValidDetails() throws InterruptedException {
 		homePage hp = new homePage(driver);
 		hp.myaccount();
@@ -26,7 +26,7 @@ public class LoginTest extends BaseClass {
 		ap.logoutbtn();
 	}
 
-	@Test
+	@Test(priority = 2)
 	public void LoggingInWithInValidDetails() throws InterruptedException {
 		homePage hp = new homePage(driver);
 		hp.myaccount();
@@ -41,7 +41,7 @@ public class LoginTest extends BaseClass {
 
 	}
 	
-	@Test
+	@Test(priority = 3)
 	public void LoginingInWithInvalidEmail() throws InterruptedException {
 		homePage hp=new homePage(driver);
 		hp.myaccount();
@@ -56,7 +56,7 @@ public class LoginTest extends BaseClass {
 		
 	}
 	
-	@Test
+	@Test(priority = 4)
 	public void LogingInWithInvalidPassword() {
 		homePage hp=new homePage(driver);
 		hp.myaccount();
@@ -70,7 +70,7 @@ public class LoginTest extends BaseClass {
 		Assert.assertEquals(lp.InValidDetailsError(), "Warning: No match for E-Mail Address and/or Password.");
 	}
 	
-	@Test
+	@Test(priority = 5)
 	public void LoggingInWithoutCreds() {
 		homePage hp=new homePage(driver);
 		hp.myaccount();
@@ -82,7 +82,7 @@ public class LoginTest extends BaseClass {
 		Assert.assertEquals(lp.InValidDetailsError(), "Warning: No match for E-Mail Address and/or Password.");
 	}
 	
-	@Test
+	@Test(priority = 6)
 	public void ForgotPageValidation() throws InterruptedException {
 		homePage hp=new homePage(driver);
 		hp.myaccount();
@@ -95,7 +95,7 @@ public class LoginTest extends BaseClass {
 		Assert.assertEquals(lp.ForgetPasswordPageValidation(),"Forgot Your Password?");
 	}
 	
-	@Test
+	@Test(priority = 7)
 	public void ValidatingEmailPlaceHolderTxt() {
 		logger.info("ValidatingEmailPlaceHolderTxt");
 		homePage hp=new homePage(driver);
