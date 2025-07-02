@@ -8,13 +8,13 @@
     <parameter name="os" value="windows"/>
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="pageObjectstestCases.LoginTest">
+      <class name="pageObjectstestCases.SearchBoxTest">
         <methods>
           <include name="TearDown"/>
           <include name="SetUp"/>
-          <include name="LoggingInWithoutCreds"/>
+          <include name="ValidatingSearchBoxResults"/>
         </methods>
-      </class> <!-- pageObjectstestCases.LoginTest -->
+      </class> <!-- pageObjectstestCases.SearchBoxTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Master Suite] -->

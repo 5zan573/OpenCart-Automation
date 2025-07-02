@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="pageObjectstestCases.LoginTest">
+      <class name="pageObjectstestCases.LogutTest">
         <methods>
-          <include name="ForgotPageValidation"/>
           <include name="TearDown"/>
           <include name="SetUp"/>
+          <include name="ValidatingLogoutByMyAccountDropDown"/>
         </methods>
-      </class> <!-- pageObjectstestCases.LoginTest -->
+      </class> <!-- pageObjectstestCases.LogutTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

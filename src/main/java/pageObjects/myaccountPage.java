@@ -15,6 +15,9 @@ public class myaccountPage extends BasePage {
 
 	@FindBy(xpath = "//body//main//a[13]")
 	WebElement logoutbtn;
+	
+	@FindBy(xpath = "//a[text()='My Account']//following-sibling::a[text()='Logout']")
+	WebElement accountpagelogoutbtn;
 
 	public String MyaccountPageExists() {
 		return myAccount.getText();
@@ -23,5 +26,10 @@ public class myaccountPage extends BasePage {
 	public void logoutbtn() {
 		logoutbtn.click();
 	}
+	
+	public void ClickOnMyAccountPageLogoutBtn() {
+		accountpagelogoutbtn.click();
+	}
+
 
 }
