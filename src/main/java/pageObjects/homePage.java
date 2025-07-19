@@ -2,11 +2,9 @@ package pageObjects;
 
 import java.util.List;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.testng.Assert;
 
 public class homePage extends BasePage {
 
@@ -29,8 +27,8 @@ public class homePage extends BasePage {
 	@FindBy (xpath = "//input[@name='search']//following-sibling::button[@type='button']")
 	WebElement SearchButton;
 	
-	@FindBy(css = ".product-thumb")
-	String SearchResult;
+	@FindBy(css = ".product-thumb h4 a")
+	List<WebElement> SearchResult;
 
 	public void myaccount() {
 		myaccount.click();
@@ -52,16 +50,16 @@ public class homePage extends BasePage {
 		SearchButton.click();
 	}
 	
-	public void ValidateSearchProductsResults() {
-		List<WebElement>allresults=driver.findElements(By.cssSelector(SearchResult));
-		for(WebElement result : allresults) {
-			String productname=result.getText();
-			if(productname != null && productname.toLowerCase().contains("imac")) {
-				continue;
+	public String ValidateSearchProductsResults(String keyword) {
+		
+		keyword = keyword.toLowerCase();
+		for(WebElement result : SearchResult) {
+			String productName = result.getText().toLowerCase();
+			if(!productName.contains(keyword)) {
+				return "Validation failed "+productName+ " does not contain "+keyword;
 			}
-			String text=result.getText().toLowerCase();
-			Assert.assertTrue(text.contains("imac"),"unexpected result"+text);
 		}
+		return keyword;
 	}
 
 }

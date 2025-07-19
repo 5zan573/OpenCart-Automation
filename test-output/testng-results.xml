@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-07-02T22:28:21 IST" name="Master Suite" finished-at="2025-07-02T22:28:29 IST" duration-ms="7929">
+  <suite started-at="2025-07-05T05:00:13 IST" name="Master Suite" finished-at="2025-07-05T05:00:21 IST" duration-ms="7743">
     <groups>
     </groups>
-    <test started-at="2025-07-02T22:28:21 IST" name="Test" finished-at="2025-07-02T22:28:29 IST" duration-ms="7929">
+    <test started-at="2025-07-05T05:00:13 IST" name="Test" finished-at="2025-07-05T05:00:21 IST" duration-ms="7743">
       <class name="pageObjectstestCases.SearchBoxTest">
-        <test-method is-config="true" signature="SetUp(java.lang.String,java.lang.String)[pri:0, instance:pageObjectstestCases.SearchBoxTest@2c1b194a]" started-at="2025-07-02T22:28:21 IST" name="SetUp" finished-at="2025-07-02T22:28:23 IST" duration-ms="1941" status="PASS">
+        <test-method is-config="true" signature="SetUp(java.lang.String,java.lang.String)[pri:0, instance:pageObjectstestCases.SearchBoxTest@2c1b194a]" started-at="2025-07-05T05:00:13 IST" name="SetUp" finished-at="2025-07-05T05:00:15 IST" duration-ms="1873" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -23,53 +23,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SetUp -->
-        <test-method signature="ValidatingSearchBoxResults()[pri:0, instance:pageObjectstestCases.SearchBoxTest@2c1b194a]" started-at="2025-07-02T22:28:23 IST" name="ValidatingSearchBoxResults" finished-at="2025-07-02T22:28:29 IST" duration-ms="5548" status="FAIL">
-          <exception class="java.lang.IllegalArgumentException">
-            <message>
-              <![CDATA[Cannot find elements when the selector is null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.IllegalArgumentException: Cannot find elements when the selector is null
-at org.openqa.selenium.internal.Require$ArgumentChecker.nonNull(Require.java:211)
-at org.openqa.selenium.By$ByCssSelector.<init>(By.java:328)
-at org.openqa.selenium.By.cssSelector(By.java:112)
-at pageObjects.homePage.ValidateSearchProductsResults(homePage.java:56)
-at pageObjectstestCases.SearchBoxTest.ValidatingSearchBoxResults(SearchBoxTest.java:15)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.IllegalArgumentException -->
+        <test-method signature="ValidatingSearchBoxResults()[pri:0, instance:pageObjectstestCases.SearchBoxTest@2c1b194a]" started-at="2025-07-05T05:00:15 IST" name="ValidatingSearchBoxResults" finished-at="2025-07-05T05:00:20 IST" duration-ms="5596" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ValidatingSearchBoxResults -->
-        <test-method is-config="true" signature="TearDown()[pri:0, instance:pageObjectstestCases.SearchBoxTest@2c1b194a]" started-at="2025-07-02T22:28:29 IST" name="TearDown" finished-at="2025-07-02T22:28:29 IST" duration-ms="129" status="PASS">
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:pageObjectstestCases.SearchBoxTest@2c1b194a]" started-at="2025-07-05T05:00:20 IST" name="TearDown" finished-at="2025-07-05T05:00:21 IST" duration-ms="100" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TearDown -->
